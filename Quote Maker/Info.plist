@@ -39,6 +39,8 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We would like to access you photo library</string>
+	<string>We would like to access your photo library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We would like to access your wonderful camera</string>
 </dict>
 </plist>

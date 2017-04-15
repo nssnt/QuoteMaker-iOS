@@ -23,6 +23,10 @@
 		586640531E9023B3000F1806 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640521E9023B3000F1806 /* SettingsViewController.m */; };
 		586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640551E90550F000F1806 /* UIImage+ImageEffects.m */; };
 		589F2B251E998203006BFDD3 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F2B241E998203006BFDD3 /* Animator.m */; };
+		58C8E2A81EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */; };
+		58C8E2A91EA2A9D1001D4530 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A31EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.m */; };
+		58C8E2AA1EA2A9D1001D4530 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */; };
+		58C8E2AB1EA2A9D1001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,14 @@
 		586640551E90550F000F1806 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		589F2B231E998203006BFDD3 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
 		589F2B241E998203006BFDD3 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		58C8E2A01EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		58C8E2A21EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		58C8E2A31EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		58C8E2A41EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		58C8E2A61EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 		5849B2771E43BE3E00D519E4 /* Quote Maker */ = {
 			isa = PBXGroup;
 			children = (
+				58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */,
 				589F2B1C1E9969CD006BFDD3 /* Animation Controllers */,
 				58663E261E90223E000F1806 /* Utils */,
 				5849B2AB1E43C1BF00D519E4 /* Fonts */,
@@ -212,6 +225,21 @@
 				589F2B241E998203006BFDD3 /* Animator.m */,
 			);
 			name = "Animation Controllers";
+			sourceTree = "<group>";
+		};
+		58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				58C8E2A01EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.h */,
+				58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */,
+				58C8E2A21EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.h */,
+				58C8E2A31EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.m */,
+				58C8E2A41EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.h */,
+				58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */,
+				58C8E2A61EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,11 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				589F2B251E998203006BFDD3 /* Animator.m in Sources */,
+				58C8E2AB1EA2A9D1001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				58C8E2A91EA2A9D1001D4530 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				58C8E2A81EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				586640531E9023B3000F1806 /* SettingsViewController.m in Sources */,
 				5849B2801E43BE3E00D519E4 /* EnterViewController.m in Sources */,
 				586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */,
 				5849B2B61E43CE9B00D519E4 /* SaveViewController.m in Sources */,
 				5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */,
+				58C8E2AA1EA2A9D1001D4530 /* TPKeyboardAvoidingTableView.m in Sources */,
 				5849B27A1E43BE3E00D519E4 /* main.m in Sources */,
 				58663E291E90228A000F1806 /* Utilities.m in Sources */,
 			);
@@ -520,6 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -536,6 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bj.quote.maker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

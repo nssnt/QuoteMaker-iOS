@@ -66,7 +66,6 @@
         __weak SaveViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveViewController"];
         
         SVC.quoteText = self.mainTextView.text;
-        SVC.watermarkText = self.watermarkTextField.text;
         SVC.transitioningDelegate = self;
         SVC.modalPresentationStyle = UIModalPresentationCustom;
         

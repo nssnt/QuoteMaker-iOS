@@ -34,6 +34,5 @@
 //Properties
 
 @property(strong, nonatomic) NSString *quoteText;
-@property(strong, nonatomic) NSString *watermarkText;
 
 @end

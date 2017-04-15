@@ -22,7 +22,7 @@
 @end
 
 @implementation SaveViewController
-@synthesize quoteText, mainLabel, imageView, saveButton, closeButton, addImageButton, watermarkText, captureView, slider;
+@synthesize quoteText, mainLabel, imageView, saveButton, closeButton, addImageButton, captureView, slider;
 
     
 -(void)dealloc {
@@ -33,14 +33,19 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [self initViewController];
     
-    if(self.watermarkText){
-        self.mainLabel.text = [quoteText stringByAppendingString:[NSString stringWithFormat:@"\n%@", self.watermarkText]];
-        self.mainLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
-    }else{
-        self.mainLabel.text = quoteText;
-        self.mainLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
-    }
+}
+
+- (void)initViewController {
+    
+    UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:160.0f];
+    
+    self.mainLabel.font = font;
+    self.mainLabel.text = quoteText;
+    self.mainLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
+    
+    self.slider.maximumValue = 100;
     
     self.saveButton.layer.shadowColor = [[UIColor blackColor] CGColor];
     self.saveButton.layer.shadowOpacity = 0.36;
@@ -58,13 +63,7 @@
     self.addImageButton.layer.shadowOpacity = 0.45;
     self.addImageButton.layer.masksToBounds = NO;
     
-    self.slider.maximumValue = 100;
-    
-    UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:160.0f];
-    self.mainLabel.font = font;
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     
@@ -74,6 +73,36 @@
 
 -(IBAction)addImageButtonTouched:(id)sender{
     
+    [self showImagePickingActionSheet];
+    
+}
+
+- (void)showImagePickingActionSheet {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self presentPicker: @"Camera"];
+        
+    }];
+    
+    UIAlertAction *library = [UIAlertAction actionWithTitle:@"Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self presentPicker: @"Library"];
+    }];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+
+    }];
+    
+    [alert addAction:library];
+    [alert addAction:camera];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (void)presentPicker:(NSString *) sourceType {
     
     if(pickerController == nil){
         
@@ -82,7 +111,7 @@
             pickerController.delegate = self;
             pickerController.allowsEditing = NO;
             
-            [pickerController setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            [pickerController setSourceType: [sourceType isEqualToString: @"Library"] ? UIImagePickerControllerSourceTypePhotoLibrary : UIImagePickerControllerSourceTypeCamera];
         }
         
     }
@@ -175,12 +204,13 @@
 
 -(IBAction)sliderValueChanged:(UISlider *)sender {
     
+    __weak typeof(self) weakSelf = self;
+    
     @autoreleasepool {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 @autoreleasepool {
                     if(self.imageView.image) {
-                        __weak typeof(self) weakSelf = self;
                         if(sender.value == 0) {
                             weakSelf.imageView.image = actualBGImage;
                         } else {
