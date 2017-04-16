@@ -20,7 +20,7 @@
 
 @implementation EnterViewController
 
-@synthesize mainTextView, watermarkTextField, previewButton;
+@synthesize mainTextView, previewButton;
 
 
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {

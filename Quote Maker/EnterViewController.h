@@ -11,7 +11,6 @@
 @interface EnterViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *mainTextView;
-@property (weak, nonatomic) IBOutlet UITextField *watermarkTextField;
 @property (weak, nonatomic) IBOutlet UIButton *previewButton;
 
 -(IBAction)previewButtonPressed:(id)sender;

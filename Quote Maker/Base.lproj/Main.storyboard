@@ -77,6 +77,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your text here👇🏻😀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww7-nj-Ajd">
+                                                <rect key="frame" x="60" y="10" width="200" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -118,6 +125,17 @@
                                     <action selector="previewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXm-T7-T8f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-Kp-oHm">
+                                <rect key="frame" x="20" y="28" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="cGA-a3-u3x"/>
+                                    <constraint firstAttribute="height" constant="30" id="d60-7R-cYX"/>
+                                </constraints>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="al4-SK-rMg" kind="presentation" id="iwh-pd-ppx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,9 +143,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="84n-PA-JMc" secondAttribute="bottom" constant="22" id="3Sq-6X-qfd"/>
                             <constraint firstItem="lq8-z3-46x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSr-RY-Atx"/>
                             <constraint firstItem="lq8-z3-46x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="P5p-OK-nry"/>
+                            <constraint firstItem="jqm-Kp-oHm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VZH-ij-AFF"/>
                             <constraint firstAttribute="trailing" secondItem="lq8-z3-46x" secondAttribute="trailing" id="jAa-a7-G2i"/>
                             <constraint firstItem="lq8-z3-46x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="okR-2p-MQS"/>
                             <constraint firstItem="84n-PA-JMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ooL-jU-Tmb"/>
+                            <constraint firstItem="jqm-Kp-oHm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yc5-2l-Cj3"/>
                             <constraint firstItem="84n-PA-JMc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ycc-UW-IFK"/>
                         </constraints>
                     </view>
@@ -140,6 +160,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="mQ3-vS-byT">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsViewController" id="al4-SK-rMg" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gIe-pR-LLh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="WTB-66-d4l">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WTB-66-d4l" id="0A3-Ov-hCs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="al4-SK-rMg" id="cyc-bZ-bFE"/>
+                            <outlet property="delegate" destination="al4-SK-rMg" id="a97-JD-jvf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUi-x6-X5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="913"/>
         </scene>
         <!--Save-->
         <scene sceneID="4Vx-9X-S37">
