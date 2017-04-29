@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0uz-S8-aCo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0uz-S8-aCo">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,9 +77,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your text here👇🏻😀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww7-nj-Ajd">
-                                                <rect key="frame" x="60" y="10" width="200" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your text here👇🏻😀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww7-nj-Ajd">
+                                                <rect key="frame" x="74" y="14.5" width="172" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -88,11 +87,13 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="hJF-Oz-NvD" secondAttribute="trailing" constant="20" id="6vV-hN-3zz"/>
+                                            <constraint firstItem="ww7-nj-Ajd" firstAttribute="centerX" secondItem="WKX-jK-82s" secondAttribute="centerX" id="A3P-aE-9Bo"/>
                                             <constraint firstItem="726-Ll-b1u" firstAttribute="leading" secondItem="WKX-jK-82s" secondAttribute="leadingMargin" constant="12" id="JXH-s6-Sz7"/>
                                             <constraint firstItem="726-Ll-b1u" firstAttribute="centerX" secondItem="WKX-jK-82s" secondAttribute="centerX" id="Nk5-6c-vND"/>
                                             <constraint firstItem="x67-Xt-7Fd" firstAttribute="top" secondItem="hJF-Oz-NvD" secondAttribute="bottom" constant="8" id="Ocb-L8-pbt"/>
                                             <constraint firstItem="hJF-Oz-NvD" firstAttribute="leading" secondItem="WKX-jK-82s" secondAttribute="leading" constant="20" id="Srr-Ev-KaW"/>
                                             <constraint firstItem="x67-Xt-7Fd" firstAttribute="centerX" secondItem="WKX-jK-82s" secondAttribute="centerX" id="Z8W-fe-28o"/>
+                                            <constraint firstItem="726-Ll-b1u" firstAttribute="top" secondItem="ww7-nj-Ajd" secondAttribute="bottom" constant="8" id="aZu-Po-IuK"/>
                                             <constraint firstItem="hJF-Oz-NvD" firstAttribute="centerX" secondItem="WKX-jK-82s" secondAttribute="centerX" id="e33-cE-fOb"/>
                                             <constraint firstItem="hJF-Oz-NvD" firstAttribute="centerY" secondItem="WKX-jK-82s" secondAttribute="centerY" constant="-1" id="gW0-69-mhX"/>
                                             <constraint firstItem="x67-Xt-7Fd" firstAttribute="width" secondItem="hJF-Oz-NvD" secondAttribute="width" id="kUg-ka-eKw"/>
@@ -274,6 +275,19 @@
                                     <action selector="sliderValueChanged:" destination="HON-DZ-Joa" eventType="valueChanged" id="p9L-VX-fKg"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-BL-t7y">
+                                <rect key="frame" x="258" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="adf-uL-mrT"/>
+                                    <constraint firstAttribute="height" constant="30" id="wF6-mh-mUW"/>
+                                </constraints>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonTouched:" destination="HON-DZ-Joa" eventType="touchUpInside" id="aZZ-g4-j6r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -287,11 +301,13 @@
                             <constraint firstItem="VS2-b4-vbL" firstAttribute="top" secondItem="IDG-MB-Bew" secondAttribute="bottom" constant="-3" id="Qv6-hX-LXU"/>
                             <constraint firstItem="Ihl-Bn-3Od" firstAttribute="top" secondItem="0vy-A0-Zq1" secondAttribute="bottom" constant="8" id="V2R-IH-j0o"/>
                             <constraint firstItem="IDG-MB-Bew" firstAttribute="top" secondItem="Y8o-Vj-wG6" secondAttribute="bottom" id="Vd0-6u-dm1"/>
+                            <constraint firstAttribute="trailing" secondItem="5ZU-BL-t7y" secondAttribute="trailing" constant="16" id="aFd-Mt-fYp"/>
                             <constraint firstAttribute="bottom" secondItem="pnj-Ry-XhV" secondAttribute="bottom" constant="20" symbolic="YES" id="brn-MB-8dQ"/>
                             <constraint firstItem="pnj-Ry-XhV" firstAttribute="leading" secondItem="0M5-Bt-l5f" secondAttribute="leadingMargin" id="dPu-Ct-RHM"/>
                             <constraint firstItem="0vy-A0-Zq1" firstAttribute="centerX" secondItem="pnj-Ry-XhV" secondAttribute="centerX" id="fbc-3L-H4X"/>
                             <constraint firstItem="Ihl-Bn-3Od" firstAttribute="centerX" secondItem="0M5-Bt-l5f" secondAttribute="centerX" id="id3-GA-pW8"/>
                             <constraint firstItem="Ihl-Bn-3Od" firstAttribute="width" secondItem="0M5-Bt-l5f" secondAttribute="width" id="pkC-xo-IY2"/>
+                            <constraint firstItem="5ZU-BL-t7y" firstAttribute="top" secondItem="Y8o-Vj-wG6" secondAttribute="bottom" id="qTj-I5-I9n"/>
                             <constraint firstItem="IDG-MB-Bew" firstAttribute="leading" secondItem="0M5-Bt-l5f" secondAttribute="leading" id="tVX-FY-MWb"/>
                         </constraints>
                     </view>
@@ -302,6 +318,7 @@
                         <outlet property="imageView" destination="jmV-mT-Ded" id="xcB-MF-8tT"/>
                         <outlet property="mainLabel" destination="7pD-51-haU" id="VvB-uG-WFE"/>
                         <outlet property="saveButton" destination="pnj-Ry-XhV" id="73w-pA-1pt"/>
+                        <outlet property="shareButton" destination="5ZU-BL-t7y" id="cvg-FP-8pw"/>
                         <outlet property="slider" destination="VS2-b4-vbL" id="8Ab-3g-8dl"/>
                     </connections>
                 </viewController>

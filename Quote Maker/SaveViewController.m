@@ -10,6 +10,7 @@
 #import "Utilities.h"
 #import "UIImage+ImageEffects.h"
 #import "Animator.h"
+#import <Social/Social.h>
 
 @interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     
@@ -24,7 +25,7 @@
 @implementation SaveViewController
 @synthesize quoteText, mainLabel, imageView, saveButton, closeButton, addImageButton, captureView, slider;
 
-    
+
 -(void)dealloc {
     
     NSLog(@"Save VC is being deallocated");
@@ -39,10 +40,11 @@
 
 - (void)initViewController {
     
-    UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:160.0f];
+    UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:125];
     
     self.mainLabel.font = font;
     self.mainLabel.text = quoteText;
+    self.mainLabel.lineBreakMode = NSLineBreakByClipping;
     self.mainLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     
     self.slider.maximumValue = 100;
@@ -77,9 +79,42 @@
     
 }
 
+-(IBAction)shareButtonTouched:(id)sender {
+    
+    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]) {
+        
+        SLComposeViewController __weak *composeViewController = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
+        [composeViewController addImage: [self imageWithView:self.view]];
+        
+        [composeViewController setCompletionHandler: ^(SLComposeViewControllerResult result) {
+            
+            switch (result) {
+                    
+                case SLComposeViewControllerResultCancelled:
+                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
+                    break;
+                case SLComposeViewControllerResultDone:
+                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
+                    break;
+                default:
+                    break;
+            }
+            
+        }];
+        
+        [self presentViewController:composeViewController animated:YES completion:nil];
+    } else {
+        NSLog(@"Facebook sharing not enabled. This is a simulator");
+    }
+    
+}
+
 - (void)showImagePickingActionSheet {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    alert.popoverPresentationController.sourceView = self.view;
+    alert.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
     
     UIAlertAction *camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self presentPicker: @"Camera"];
@@ -91,7 +126,7 @@
     }];
     
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-
+        
     }];
     
     [alert addAction:library];
@@ -128,6 +163,7 @@
         self.saveButton.hidden = NO;
         self.closeButton.hidden = NO;
         self.slider.hidden = NO;
+        self.shareButton.hidden = NO;
         
         UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
     }
@@ -185,6 +221,7 @@
         self.saveButton.hidden = YES;
         self.closeButton.hidden = YES;
         self.slider.hidden = YES;
+        self.shareButton.hidden = YES;
         
         if(!self.imageView.image){
             self.captureView.backgroundColor = self.view.backgroundColor;
@@ -195,6 +232,12 @@
         UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
         
         UIGraphicsEndImageContext();
+        
+        self.addImageButton.hidden = NO;
+        self.saveButton.hidden = NO;
+        self.closeButton.hidden = NO;
+        self.slider.hidden = NO;
+        self.shareButton.hidden = NO;
         
         return img;
         
@@ -222,5 +265,6 @@
         });
     }
 }
+
 
 @end

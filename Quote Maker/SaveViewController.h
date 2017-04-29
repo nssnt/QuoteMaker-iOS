@@ -19,6 +19,7 @@
 @property(weak, nonatomic) IBOutlet UIButton *saveButton;
 @property(weak, nonatomic) IBOutlet UIButton *closeButton;
 @property(weak, nonatomic) IBOutlet UIButton *addImageButton;
+@property(weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @property(weak, nonatomic) IBOutlet UIView *captureView;
 @property(weak, nonatomic) IBOutlet UISlider *slider;
@@ -29,6 +30,7 @@
 -(IBAction)addImageButtonTouched:(id)sender;
 -(IBAction)saveButtonTouched:(id)sender;
 -(IBAction)closeButtonTouched:(id)sender;
+-(IBAction)shareButtonTouched:(id)sender;
 -(IBAction)sliderValueChanged:(UISlider *)sender;
 
 //Properties

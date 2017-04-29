@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D3548D9AE6B9CC35F18F38 /* Pods_Quote_MakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */; };
+		2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB8D9800109749408DE6128 /* Pods_Quote_Maker.framework */; };
 		5849B27A1E43BE3E00D519E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2791E43BE3E00D519E4 /* main.m */; };
 		5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27C1E43BE3E00D519E4 /* AppDelegate.m */; };
 		5849B2801E43BE3E00D519E4 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27F1E43BE3E00D519E4 /* EnterViewController.m */; };
@@ -23,10 +25,12 @@
 		586640531E9023B3000F1806 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640521E9023B3000F1806 /* SettingsViewController.m */; };
 		586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640551E90550F000F1806 /* UIImage+ImageEffects.m */; };
 		589F2B251E998203006BFDD3 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F2B241E998203006BFDD3 /* Animator.m */; };
+		58C198B21EA60744005931B5 /* NonClippingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C198B11EA60744005931B5 /* NonClippingLabel.m */; };
 		58C8E2A81EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */; };
 		58C8E2A91EA2A9D1001D4530 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A31EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.m */; };
 		58C8E2AA1EA2A9D1001D4530 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */; };
 		58C8E2AB1EA2A9D1001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		CAC817A6E82AC708DB6F79B6 /* Pods_Quote_MakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C37DAC4E291CEAB346CE3 /* Pods_Quote_MakerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0757A41C9725EB5D4ECD189A /* Pods-Quote MakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BD53D7C01F8F38390799741 /* Pods-Quote Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote Maker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker.release.xcconfig"; sourceTree = "<group>"; };
+		3945D2A60FA4F4FAB9A90DB9 /* Pods-Quote MakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A0D3F9EB5F3B68CF8EA84BE /* Pods-Quote Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote Maker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker.debug.xcconfig"; sourceTree = "<group>"; };
 		5849B2751E43BE3E00D519E4 /* Quote Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quote Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5849B2791E43BE3E00D519E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5849B27B1E43BE3E00D519E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 		586640551E90550F000F1806 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		589F2B231E998203006BFDD3 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
 		589F2B241E998203006BFDD3 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		58C198B01EA60744005931B5 /* NonClippingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonClippingLabel.h; sourceTree = "<group>"; };
+		58C198B11EA60744005931B5 /* NonClippingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonClippingLabel.m; sourceTree = "<group>"; };
 		58C8E2A01EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		58C8E2A21EA2A9D0001D4530 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -84,6 +94,11 @@
 		58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		58C8E2A61EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_MakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A9F50EFFEF57E08203527E /* Pods-Quote MakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98315917872242E0B02BCF18 /* Pods-Quote MakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7C37DAC4E291CEAB346CE3 /* Pods_Quote_MakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_MakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB8D9800109749408DE6128 /* Pods_Quote_Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC817A6E82AC708DB6F79B6 /* Pods_Quote_MakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D3548D9AE6B9CC35F18F38 /* Pods_Quote_MakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +136,8 @@
 				5849B2911E43BE3E00D519E4 /* Quote MakerTests */,
 				5849B29C1E43BE3F00D519E4 /* Quote MakerUITests */,
 				5849B2761E43BE3E00D519E4 /* Products */,
+				EF23039A5F386E2802A05C19 /* Pods */,
+				D23D02657A879A4AB519F0E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +165,8 @@
 				5849B2861E43BE3E00D519E4 /* LaunchScreen.storyboard */,
 				5849B2891E43BE3E00D519E4 /* Info.plist */,
 				5849B2781E43BE3E00D519E4 /* Supporting Files */,
+				58C198B01EA60744005931B5 /* NonClippingLabel.h */,
+				58C198B11EA60744005931B5 /* NonClippingLabel.m */,
 			);
 			path = "Quote Maker";
 			sourceTree = "<group>";
@@ -242,6 +264,29 @@
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
+		D23D02657A879A4AB519F0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8D9800109749408DE6128 /* Pods_Quote_Maker.framework */,
+				AC7C37DAC4E291CEAB346CE3 /* Pods_Quote_MakerTests.framework */,
+				61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF23039A5F386E2802A05C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A0D3F9EB5F3B68CF8EA84BE /* Pods-Quote Maker.debug.xcconfig */,
+				1BD53D7C01F8F38390799741 /* Pods-Quote Maker.release.xcconfig */,
+				98315917872242E0B02BCF18 /* Pods-Quote MakerTests.debug.xcconfig */,
+				3945D2A60FA4F4FAB9A90DB9 /* Pods-Quote MakerTests.release.xcconfig */,
+				0757A41C9725EB5D4ECD189A /* Pods-Quote MakerUITests.debug.xcconfig */,
+				89A9F50EFFEF57E08203527E /* Pods-Quote MakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5849B2A21E43BE3F00D519E4 /* Build configuration list for PBXNativeTarget "Quote Maker" */;
 			buildPhases = (
+				FB0D3B4741A0D67CEDA526AD /* [CP] Check Pods Manifest.lock */,
 				5849B2711E43BE3E00D519E4 /* Sources */,
 				5849B2721E43BE3E00D519E4 /* Frameworks */,
 				5849B2731E43BE3E00D519E4 /* Resources */,
+				C33C7A6747A968D4F879AD4F /* [CP] Embed Pods Frameworks */,
+				796B2A04855B33C4C141B879 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5849B2A51E43BE3F00D519E4 /* Build configuration list for PBXNativeTarget "Quote MakerTests" */;
 			buildPhases = (
+				91C3C451C620A9FA484794BD /* [CP] Check Pods Manifest.lock */,
 				5849B28A1E43BE3E00D519E4 /* Sources */,
 				5849B28B1E43BE3E00D519E4 /* Frameworks */,
 				5849B28C1E43BE3E00D519E4 /* Resources */,
+				15EE32BF3059052CE4F3AC0C /* [CP] Embed Pods Frameworks */,
+				5A1CA71D281CD4CA9B6CFAE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5849B2A81E43BE3F00D519E4 /* Build configuration list for PBXNativeTarget "Quote MakerUITests" */;
 			buildPhases = (
+				73F661EEC8391D260C9D0082 /* [CP] Check Pods Manifest.lock */,
 				5849B2951E43BE3F00D519E4 /* Sources */,
 				5849B2961E43BE3F00D519E4 /* Frameworks */,
 				5849B2971E43BE3F00D519E4 /* Resources */,
+				21DF10F15CEC64B253379EC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,6 +430,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15EE32BF3059052CE4F3AC0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21DF10F15CEC64B253379EC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A1CA71D281CD4CA9B6CFAE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F661EEC8391D260C9D0082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		796B2A04855B33C4C141B879 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C3C451C620A9FA484794BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C33C7A6747A968D4F879AD4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0D3B4741A0D67CEDA526AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5849B2711E43BE3E00D519E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -391,6 +567,7 @@
 				586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */,
 				5849B2B61E43CE9B00D519E4 /* SaveViewController.m in Sources */,
 				5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */,
+				58C198B21EA60744005931B5 /* NonClippingLabel.m in Sources */,
 				58C8E2AA1EA2A9D1001D4530 /* TPKeyboardAvoidingTableView.m in Sources */,
 				5849B27A1E43BE3E00D519E4 /* main.m in Sources */,
 				58663E291E90228A000F1806 /* Utilities.m in Sources */,
@@ -540,11 +717,17 @@
 		};
 		5849B2A31E43BE3F00D519E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0D3F9EB5F3B68CF8EA84BE /* Pods-Quote Maker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = U2888GAKZ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quote\\ Maker",
+					"$(PROJECT_DIR)/Quote\\ Maker",
+				);
 				INFOPLIST_FILE = "Quote Maker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,11 +741,17 @@
 		};
 		5849B2A41E43BE3F00D519E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD53D7C01F8F38390799741 /* Pods-Quote Maker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = U2888GAKZ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quote\\ Maker",
+					"$(PROJECT_DIR)/Quote\\ Maker",
+				);
 				INFOPLIST_FILE = "Quote Maker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -575,6 +764,7 @@
 		};
 		5849B2A61E43BE3F00D519E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98315917872242E0B02BCF18 /* Pods-Quote MakerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = U2888GAKZ7;
@@ -588,6 +778,7 @@
 		};
 		5849B2A71E43BE3F00D519E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3945D2A60FA4F4FAB9A90DB9 /* Pods-Quote MakerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = U2888GAKZ7;
@@ -601,6 +792,7 @@
 		};
 		5849B2A91E43BE3F00D519E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0757A41C9725EB5D4ECD189A /* Pods-Quote MakerUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = U2888GAKZ7;
 				INFOPLIST_FILE = "Quote MakerUITests/Info.plist";
@@ -613,6 +805,7 @@
 		};
 		5849B2AA1E43BE3F00D519E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A9F50EFFEF57E08203527E /* Pods-Quote MakerUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = U2888GAKZ7;
 				INFOPLIST_FILE = "Quote MakerUITests/Info.plist";

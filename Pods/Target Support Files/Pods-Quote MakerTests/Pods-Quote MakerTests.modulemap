@@ -1,0 +1,6 @@
+framework module Pods_Quote_MakerTests {
+  umbrella header "Pods-Quote MakerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

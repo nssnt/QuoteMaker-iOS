@@ -40,6 +40,10 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We would like to access your photo library</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>We would like to access your wonderful camera</string>
 </dict>
