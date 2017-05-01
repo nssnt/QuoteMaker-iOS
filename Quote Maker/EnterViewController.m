@@ -9,6 +9,7 @@
 #import "EnterViewController.h"
 #import "SaveViewController.h"
 #import "Animator.h"
+#import <Lottie/Lottie.h>
 
 
 @interface EnterViewController ()<UITextFieldDelegate, UITextViewDelegate, UIViewControllerTransitioningDelegate> {
@@ -37,6 +38,7 @@
     animator = [[Animator alloc] init];
     self.previewButton.layer.cornerRadius = previewButton.frame.size.height / 2;
     self.previewButton.layer.masksToBounds = YES;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +72,7 @@
         SVC.modalPresentationStyle = UIModalPresentationCustom;
         
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
+
         
     }
     

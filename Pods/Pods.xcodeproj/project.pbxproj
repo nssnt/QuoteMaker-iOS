@@ -1,1549 +1,813 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>034014829C1E4434983CF3A690C12017</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>13AAF4D97721603B1E20BFD493040AB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D0F3245F33150C2214B2C2C786DCA77C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18D84B5052F41C7698E846C55044705A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EC12738B5CD362B0CE49D0E8E34B2E2E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6DE1252C86C15E81242E44B0D288F27F</string>
-				<string>13AAF4D97721603B1E20BFD493040AB5</string>
-				<string>C23E1CD7A560BE29A025F1150F813430</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Quote MakerTests</string>
-			<key>productName</key>
-			<string>Pods-Quote MakerTests</string>
-			<key>productReference</key>
-			<string>97B104F405CCEAC4C24F7C64093A6646</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>1A27BE87A22256AC1FF522A2C9AA9E24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>244973453F2CFEA7F0F8F300060C21B1</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>856A2FC11F1577ED8ECFBED694D902FE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7DCC925E398E1E3FE3F1119E0086230D</string>
-				<string>E987F7CA6A955B78728612E0A46991EF</string>
-				<string>B1C2445364998F275FF804F6FAC4EFE7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Quote Maker</string>
-			<key>productName</key>
-			<string>Pods-Quote Maker</string>
-			<key>productReference</key>
-			<string>7BF617CDC130C47A18DD412B25545332</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>252F2F08307E069A9ECBAFF148F85B9B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BB522B51525273772F65F1FF24DF561</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote Maker.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>034014829C1E4434983CF3A690C12017</string>
-				<string>C7E474A03CAE21F1CB6046E7344C59BD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30B22E738ECDC56C7E41897B3E459263</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D43EB537EA8EF59F3B43D8EFC26294AF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>34838BA8A9094E85A360879C3A0A424D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ECAE2404A26B53C5AFBB85DB36483F36</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3C3672D16027F34B6B750CF07B904154</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DF9547AF77B2BC18C0ACE70F8869154</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>426BB35F0E9F981778AC6835EBA88215</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4303AC36DC45F2184E9193BF436F7902</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46DC466506DE43692E017DAB9A5BBB8C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4AA91F5438EBE29A12AF36C012271E56</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4F32D7B90E3597CDB5E2AE26EAC11D97</key>
-		<dict>
-			<key>fileRef</key>
-			<string>55275F0B010F8CC0A29223716E2FD8E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4F82B4C1F9F951DD74440FD56408D4DA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7799628124ADA3E02E24B238BBA58ADB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerUITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_MakerUITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>4FBFD370C2E3FA1FC3D262BFAC38173D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E0D3E29776DC8C99C6A012F87C458F70</string>
-			<key>buildPhases</key>
-			<array>
-				<string>34838BA8A9094E85A360879C3A0A424D</string>
-				<string>811C6A0D9D052A5265335148990FADE8</string>
-				<string>DE49206D9732A78BD881EB29251D9FB2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Quote MakerUITests</string>
-			<key>productName</key>
-			<string>Pods-Quote MakerUITests</string>
-			<key>productReference</key>
-			<string>B0D3918C9547B973732F12D81DAFC652</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>5213376AA218141FFAC157194FF170F5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CFA3B52DA1C4739D5B7FCEE7E72875B2</string>
-				<string>855B457834441C03D89AB3932D15F985</string>
-				<string>B06A39B4B816EFE5FF8FE56961B7B3D5</string>
-				<string>DBCBA66BFB5560B40C5BF0A185F53B7C</string>
-				<string>D43EB537EA8EF59F3B43D8EFC26294AF</string>
-				<string>1A27BE87A22256AC1FF522A2C9AA9E24</string>
-				<string>4303AC36DC45F2184E9193BF436F7902</string>
-				<string>426BB35F0E9F981778AC6835EBA88215</string>
-				<string>B261BD147DEA553AA85585DF43BEE951</string>
-				<string>B4F5714A02D92F1CB22D4BEFD2E18DBC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Quote MakerTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Quote MakerTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>549881A20B09429FC6FB1BD19B297006</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8BFE708C8C5C4CC6997A730CB2C5E423</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote Maker/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote Maker/Pods-Quote Maker.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_Maker</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>55275F0B010F8CC0A29223716E2FD8E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56DE0B90FCCE3F22A23622D7D8621CA8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6D2A90F1EA51817C821B4D419E447C9E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerUITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_MakerUITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>57089D53B88097AA9C06A8C58B83809A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5F2DB81561CD609ECC67F172ECE19993</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>62C60553EB639D47D15DF7EDCE5A1668</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D2A90F1EA51817C821B4D419E447C9E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DE1252C86C15E81242E44B0D288F27F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>30B22E738ECDC56C7E41897B3E459263</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7799628124ADA3E02E24B238BBA58ADB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BF617CDC130C47A18DD412B25545332</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Quote_Maker.framework</string>
-			<key>path</key>
-			<string>Pods-Quote Maker.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>E926A2ED65FEF7CE83E277A2F727FC7F</string>
-				<string>9B833DE00A1A5C3A0090B4040513AE6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DCC925E398E1E3FE3F1119E0086230D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A5E2CCF7C12AF85089901E2674D69093</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>811C6A0D9D052A5265335148990FADE8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CF0ADDC7136FFE8D526A046DF8759472</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>855B457834441C03D89AB3932D15F985</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>856A2FC11F1577ED8ECFBED694D902FE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F51D6ED6F1CD80D067036E6CB690378A</string>
-				<string>549881A20B09429FC6FB1BD19B297006</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8BFE708C8C5C4CC6997A730CB2C5E423</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote Maker.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>979FD174F4BA39791E6849F6E8F82CA8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>426BB35F0E9F981778AC6835EBA88215</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>97B104F405CCEAC4C24F7C64093A6646</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Quote_MakerTests.framework</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9B833DE00A1A5C3A0090B4040513AE6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA9AE3391D99B42F7955D6A03325D3CF</string>
-				<string>5213376AA218141FFAC157194FF170F5</string>
-				<string>D181879B1A937D7426FB96DF76830366</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5E2CCF7C12AF85089901E2674D69093</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5F2DB81561CD609ECC67F172ECE19993</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B06A39B4B816EFE5FF8FE56961B7B3D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B0D3918C9547B973732F12D81DAFC652</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Quote_MakerUITests.framework</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B1C2445364998F275FF804F6FAC4EFE7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E8C45847E1D0A5A76A54DDB3EDB6E2FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B261BD147DEA553AA85585DF43BEE951</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4F5714A02D92F1CB22D4BEFD2E18DBC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5D0D44A0CD5F5F0755FADDF16C1DBCF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6475796EAA98D03B687CBB030B7AAD0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C23E1CD7A560BE29A025F1150F813430</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>979FD174F4BA39791E6849F6E8F82CA8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C7E474A03CAE21F1CB6046E7344C59BD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CC6C2B66095B7EF2D38034D776682F4D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B4F5714A02D92F1CB22D4BEFD2E18DBC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerTests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_MakerTests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CD80EDD9E02FEC826025E9265778F546</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CF0ADDC7136FFE8D526A046DF8759472</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFA3B52DA1C4739D5B7FCEE7E72875B2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D0F3245F33150C2214B2C2C786DCA77C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D181879B1A937D7426FB96DF76830366</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46DC466506DE43692E017DAB9A5BBB8C</string>
-				<string>DB26FD4EC953D6C956DCEE7E13AF8DFF</string>
-				<string>3DF9547AF77B2BC18C0ACE70F8869154</string>
-				<string>4AA91F5438EBE29A12AF36C012271E56</string>
-				<string>CD80EDD9E02FEC826025E9265778F546</string>
-				<string>B5D0D44A0CD5F5F0755FADDF16C1DBCF</string>
-				<string>3C3672D16027F34B6B750CF07B904154</string>
-				<string>55275F0B010F8CC0A29223716E2FD8E7</string>
-				<string>7799628124ADA3E02E24B238BBA58ADB</string>
-				<string>6D2A90F1EA51817C821B4D419E447C9E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Quote MakerUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Quote MakerUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>E926A2ED65FEF7CE83E277A2F727FC7F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>244973453F2CFEA7F0F8F300060C21B1</string>
-				<string>18D84B5052F41C7698E846C55044705A</string>
-				<string>4FBFD370C2E3FA1FC3D262BFAC38173D</string>
-			</array>
-		</dict>
-		<key>D43EB537EA8EF59F3B43D8EFC26294AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB26FD4EC953D6C956DCEE7E13AF8DFF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Quote MakerUITests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBCBA66BFB5560B40C5BF0A185F53B7C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Quote MakerTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE49206D9732A78BD881EB29251D9FB2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4F32D7B90E3597CDB5E2AE26EAC11D97</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E0D3E29776DC8C99C6A012F87C458F70</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>4F82B4C1F9F951DD74440FD56408D4DA</string>
-				<string>56DE0B90FCCE3F22A23622D7D8621CA8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E2B896010D3DE3B900B90700EB6E37D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E537038A29C2E8BF5ED6AB1129FC843C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B261BD147DEA553AA85585DF43BEE951</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerTests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_MakerTests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E8C45847E1D0A5A76A54DDB3EDB6E2FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F93B1874A48DB76BDAF19EE75EB7F0CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E926A2ED65FEF7CE83E277A2F727FC7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7BF617CDC130C47A18DD412B25545332</string>
-				<string>97B104F405CCEAC4C24F7C64093A6646</string>
-				<string>B0D3918C9547B973732F12D81DAFC652</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E987F7CA6A955B78728612E0A46991EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E2B896010D3DE3B900B90700EB6E37D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EC12738B5CD362B0CE49D0E8E34B2E2E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E537038A29C2E8BF5ED6AB1129FC843C</string>
-				<string>CC6C2B66095B7EF2D38034D776682F4D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>ECAE2404A26B53C5AFBB85DB36483F36</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CD80EDD9E02FEC826025E9265778F546</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE12E9699F44E5EBA055A1968A259891</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F51D6ED6F1CD80D067036E6CB690378A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2BB522B51525273772F65F1FF24DF561</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Quote Maker/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Quote Maker/Pods-Quote Maker.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Quote_Maker</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F93B1874A48DB76BDAF19EE75EB7F0CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Quote Maker-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA9AE3391D99B42F7955D6A03325D3CF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>57089D53B88097AA9C06A8C58B83809A</string>
-				<string>FD894FA8E73AF8B7B06329E8BB7B8FA6</string>
-				<string>EE12E9699F44E5EBA055A1968A259891</string>
-				<string>B6475796EAA98D03B687CBB030B7AAD0</string>
-				<string>5F2DB81561CD609ECC67F172ECE19993</string>
-				<string>62C60553EB639D47D15DF7EDCE5A1668</string>
-				<string>252F2F08307E069A9ECBAFF148F85B9B</string>
-				<string>F93B1874A48DB76BDAF19EE75EB7F0CC</string>
-				<string>2BB522B51525273772F65F1FF24DF561</string>
-				<string>8BFE708C8C5C4CC6997A730CB2C5E423</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Quote Maker</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Quote Maker</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD894FA8E73AF8B7B06329E8BB7B8FA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Quote Maker.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016E049D5C630202936AA87EC77F7EA3 /* Pods-Quote Maker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2DB81561CD609ECC67F172ECE19993 /* Pods-Quote Maker-dummy.m */; };
+		2A7009CD492717715E916F8B7B3084A5 /* Pods-Quote Maker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F93B1874A48DB76BDAF19EE75EB7F0CC /* Pods-Quote Maker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30B22E738ECDC56C7E41897B3E459263 /* Pods-Quote MakerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D43EB537EA8EF59F3B43D8EFC26294AF /* Pods-Quote MakerTests-dummy.m */; };
+		4F32D7B90E3597CDB5E2AE26EAC11D97 /* Pods-Quote MakerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55275F0B010F8CC0A29223716E2FD8E7 /* Pods-Quote MakerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		979FD174F4BA39791E6849F6E8F82CA8 /* Pods-Quote MakerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 426BB35F0E9F981778AC6835EBA88215 /* Pods-Quote MakerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98FEC25475161549494E45B0747F29E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		CF0ADDC7136FFE8D526A046DF8759472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		D0F3245F33150C2214B2C2C786DCA77C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		ECAE2404A26B53C5AFBB85DB36483F36 /* Pods-Quote MakerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD80EDD9E02FEC826025E9265778F546 /* Pods-Quote MakerUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000A877AE92E8F080B87BDBE7A1AB03E /* LAShapeTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeTransform.h; path = "lottie-ios/Classes/LAShapeTransform.h"; sourceTree = "<group>"; };
+		02ADA2265128CABE60A9901C76AAB873 /* LAShapeTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeTransform.m; path = "lottie-ios/Classes/LAShapeTransform.m"; sourceTree = "<group>"; };
+		05F3166C97C8D82646C05FC442E642C0 /* LAMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAMask.h; path = "lottie-ios/Classes/LAMask.h"; sourceTree = "<group>"; };
+		06D5D4D5048B7C15CE3E27775A19B63D /* LAShapeGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeGroup.m; path = "lottie-ios/Classes/LAShapeGroup.m"; sourceTree = "<group>"; };
+		07F84F234E7183AB6D09C8D46B1E604B /* LAComposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAComposition.m; path = "lottie-ios/Classes/LAComposition.m"; sourceTree = "<group>"; };
+		09EDCD9477C329A74378FED4D1AAF23B /* LARectShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LARectShapeLayer.h; path = "lottie-ios/Classes/LARectShapeLayer.h"; sourceTree = "<group>"; };
+		13969CC463E25A0635CDDE7655806293 /* LAShapeCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeCircle.m; path = "lottie-ios/Classes/LAShapeCircle.m"; sourceTree = "<group>"; };
+		1A04892F211541F6880F9101CC153F59 /* LAAnimationCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimationCache.h; path = "lottie-ios/Classes/LAAnimationCache.h"; sourceTree = "<group>"; };
+		1A27BE87A22256AC1FF522A2C9AA9E24 /* Pods-Quote MakerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote MakerTests-frameworks.sh"; sourceTree = "<group>"; };
+		1E39A493BE2966B8138403A9468A84CF /* LAAnimatableLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableLayer.h; path = "lottie-ios/Classes/LAAnimatableLayer.h"; sourceTree = "<group>"; };
+		1EB4CCF03FB6AF3C765EBCCA123CD232 /* LAShapeGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeGroup.h; path = "lottie-ios/Classes/LAShapeGroup.h"; sourceTree = "<group>"; };
+		252F2F08307E069A9ECBAFF148F85B9B /* Pods-Quote Maker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote Maker-resources.sh"; sourceTree = "<group>"; };
+		273834AAF56C2894536CA2DB5F2AD132 /* LAEllipseShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAEllipseShapeLayer.m; path = "lottie-ios/Classes/LAEllipseShapeLayer.m"; sourceTree = "<group>"; };
+		2783752C346B8D88EF5201F6A9FB9542 /* LAComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAComposition.h; path = "lottie-ios/Classes/LAComposition.h"; sourceTree = "<group>"; };
+		2BB522B51525273772F65F1FF24DF561 /* Pods-Quote Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote Maker.debug.xcconfig"; sourceTree = "<group>"; };
+		2CD0397E965BBDC5C0335EFF0F6C7CAB /* LAAnimatableScaleValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableScaleValue.m; path = "lottie-ios/Classes/LAAnimatableScaleValue.m"; sourceTree = "<group>"; };
+		33EF6EDE313C3774752FCC4153D6BE48 /* LAAnimationCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimationCache.m; path = "lottie-ios/Classes/LAAnimationCache.m"; sourceTree = "<group>"; };
+		3C3672D16027F34B6B750CF07B904154 /* Pods-Quote MakerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote MakerUITests-resources.sh"; sourceTree = "<group>"; };
+		3C6E88051EDA078800BBA9BD3C75F2F2 /* Pods_Quote_MakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_MakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF9547AF77B2BC18C0ACE70F8869154 /* Pods-Quote MakerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Quote MakerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40567B71376983BEAB80170A7A1B2485 /* LALayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LALayer.h; path = "lottie-ios/Classes/LALayer.h"; sourceTree = "<group>"; };
+		426BB35F0E9F981778AC6835EBA88215 /* Pods-Quote MakerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Quote MakerTests-umbrella.h"; sourceTree = "<group>"; };
+		4303AC36DC45F2184E9193BF436F7902 /* Pods-Quote MakerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote MakerTests-resources.sh"; sourceTree = "<group>"; };
+		46DC466506DE43692E017DAB9A5BBB8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4864E00E47429BA02DC5D9A2F23169E4 /* LAShapeFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeFill.h; path = "lottie-ios/Classes/LAShapeFill.h"; sourceTree = "<group>"; };
+		4AA91F5438EBE29A12AF36C012271E56 /* Pods-Quote MakerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Quote MakerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55275F0B010F8CC0A29223716E2FD8E7 /* Pods-Quote MakerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Quote MakerUITests-umbrella.h"; sourceTree = "<group>"; };
+		57089D53B88097AA9C06A8C58B83809A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF34E2395923731C14FD52EFE70839D /* LALayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LALayerView.h; path = "lottie-ios/Classes/LALayerView.h"; sourceTree = "<group>"; };
+		5F2DB81561CD609ECC67F172ECE19993 /* Pods-Quote Maker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Quote Maker-dummy.m"; sourceTree = "<group>"; };
+		5F5725E190651B7A298A6EDF2C42921B /* lottie-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.xcconfig"; sourceTree = "<group>"; };
+		5F58CFB7D85035FFE25EEE180C04A071 /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "lottie-ios/Classes/UIColor+Expanded.h"; sourceTree = "<group>"; };
+		61812969F0236801444F046EEDC3585C /* CGGeometryAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGGeometryAdditions.m; path = "lottie-ios/Classes/CGGeometryAdditions.m"; sourceTree = "<group>"; };
+		62C60553EB639D47D15DF7EDCE5A1668 /* Pods-Quote Maker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote Maker-frameworks.sh"; sourceTree = "<group>"; };
+		6800D8450280D48B26E2F5DF607EB470 /* LAAnimationView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimationView_Internal.h; path = "lottie-ios/Classes/LAAnimationView_Internal.h"; sourceTree = "<group>"; };
+		6D2A90F1EA51817C821B4D419E447C9E /* Pods-Quote MakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote MakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DDE5F73B8135D24647A411BFDDDB85C /* LAAnimationTransitionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimationTransitionController.h; path = "lottie-ios/Classes/PublicHeaders/LAAnimationTransitionController.h"; sourceTree = "<group>"; };
+		6F4A54C008431F7E56A7BFF91DBCC1E7 /* LAAnimatableShapeValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableShapeValue.m; path = "lottie-ios/Classes/LAAnimatableShapeValue.m"; sourceTree = "<group>"; };
+		712D527D466E1800B5F23EFC6F13F5EB /* Lottie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lottie.h; path = "lottie-ios/Classes/PublicHeaders/Lottie.h"; sourceTree = "<group>"; };
+		7799628124ADA3E02E24B238BBA58ADB /* Pods-Quote MakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote MakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		788ABC3137416FD13614617F09A3BA01 /* LAShapeTrimPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeTrimPath.m; path = "lottie-ios/Classes/LAShapeTrimPath.m"; sourceTree = "<group>"; };
+		801C9DD57FD966559992C331DDF36568 /* LAGroupLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAGroupLayerView.m; path = "lottie-ios/Classes/LAGroupLayerView.m"; sourceTree = "<group>"; };
+		825159DA69A6DA583EE4838503497D50 /* LAGroupLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAGroupLayerView.h; path = "lottie-ios/Classes/LAGroupLayerView.h"; sourceTree = "<group>"; };
+		83F4CD8AE6DF95826D0D51A478DFAA44 /* CAAnimationGroup+LAAnimatableGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimationGroup+LAAnimatableGroup.h"; path = "lottie-ios/Classes/CAAnimationGroup+LAAnimatableGroup.h"; sourceTree = "<group>"; };
+		855B457834441C03D89AB3932D15F985 /* Pods-Quote MakerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Quote MakerTests.modulemap"; sourceTree = "<group>"; };
+		861FC31F89B799C69D402C8B20D93B03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1B9F342BD37EC46DA4701CF826B93A /* lottie-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-umbrella.h"; sourceTree = "<group>"; };
+		8BFE708C8C5C4CC6997A730CB2C5E423 /* Pods-Quote Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote Maker.release.xcconfig"; sourceTree = "<group>"; };
+		924453B09A6C6845BA1A00B10D7FE841 /* LAShapeStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeStroke.m; path = "lottie-ios/Classes/LAShapeStroke.m"; sourceTree = "<group>"; };
+		93A1374CE49F4DD813C1F2A6AFDFD45A /* LAModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAModels.h; path = "lottie-ios/Classes/LAModels.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94146153D05E6266F1B91F2E5A51BF1D /* LAShapeRectangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeRectangle.m; path = "lottie-ios/Classes/LAShapeRectangle.m"; sourceTree = "<group>"; };
+		9681B521091F6B98F60C26CE5266788B /* LAAnimatableNumberValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableNumberValue.h; path = "lottie-ios/Classes/LAAnimatableNumberValue.h"; sourceTree = "<group>"; };
+		9D9B03AA1B96B76E1C5AFD593514C38D /* Pods_Quote_MakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_MakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA2BCDE21B10E7DC8E5831BBF2D0DC5 /* LAAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimationView.h; path = "lottie-ios/Classes/PublicHeaders/LAAnimationView.h"; sourceTree = "<group>"; };
+		9E23DFEE644E74EA99C2E70EBDCF2E3A /* LAAnimatableLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableLayer.m; path = "lottie-ios/Classes/LAAnimatableLayer.m"; sourceTree = "<group>"; };
+		A01A32C6378354D24DF9355B512AD44D /* Pods_Quote_Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02C1C4DD77C2B26F75B30B7AD707941 /* CAAnimationGroup+LAAnimatableGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimationGroup+LAAnimatableGroup.m"; path = "lottie-ios/Classes/CAAnimationGroup+LAAnimatableGroup.m"; sourceTree = "<group>"; };
+		A154BEA55F44A3291A04846657DA023D /* LAShapeLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeLayerView.h; path = "lottie-ios/Classes/LAShapeLayerView.h"; sourceTree = "<group>"; };
+		A1F444F81AC54D2272C45B00F11B514D /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A3A9776B6A34EBFA90FFAEA6C7C5E2B3 /* LALayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LALayer.m; path = "lottie-ios/Classes/LALayer.m"; sourceTree = "<group>"; };
+		A5722475B8C8EFEA5651297D08A2B2E2 /* LAMaskLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAMaskLayer.m; path = "lottie-ios/Classes/LAMaskLayer.m"; sourceTree = "<group>"; };
+		A5FD2B99F69454B5D2429923AE24ECF9 /* LAShapePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapePath.m; path = "lottie-ios/Classes/LAShapePath.m"; sourceTree = "<group>"; };
+		A7BCB75B1CA65B1EDD92E5093B1B2A0F /* LAHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAHelpers.h; path = "lottie-ios/Classes/LAHelpers.h"; sourceTree = "<group>"; };
+		A8566F2E96F29187B617313112291134 /* LAShapeFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeFill.m; path = "lottie-ios/Classes/LAShapeFill.m"; sourceTree = "<group>"; };
+		B06A39B4B816EFE5FF8FE56961B7B3D5 /* Pods-Quote MakerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Quote MakerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B261BD147DEA553AA85585DF43BEE951 /* Pods-Quote MakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote MakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4531F48BE712FED58EF898DD7435E00 /* LAAnimatableColorValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableColorValue.m; path = "lottie-ios/Classes/LAAnimatableColorValue.m"; sourceTree = "<group>"; };
+		B4F5714A02D92F1CB22D4BEFD2E18DBC /* Pods-Quote MakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quote MakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5D0D44A0CD5F5F0755FADDF16C1DBCF /* Pods-Quote MakerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quote MakerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B6335D1EA6E7D7D3D6F00290AE24FCC1 /* CGGeometryAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGGeometryAdditions.h; path = "lottie-ios/Classes/CGGeometryAdditions.h"; sourceTree = "<group>"; };
+		B6475796EAA98D03B687CBB030B7AAD0 /* Pods-Quote Maker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Quote Maker-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF236D08B82FF5CD6CE5995587377D4D /* LAAnimatableColorValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableColorValue.h; path = "lottie-ios/Classes/LAAnimatableColorValue.h"; sourceTree = "<group>"; };
+		C470DBA5BE5251AA97A04B42DA6DA821 /* LAAnimatableNumberValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableNumberValue.m; path = "lottie-ios/Classes/LAAnimatableNumberValue.m"; sourceTree = "<group>"; };
+		C625DD063A47F9B2FD2B9F79235C8296 /* LAAnimatableBoundsValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableBoundsValue.h; path = "lottie-ios/Classes/LAAnimatableBoundsValue.h"; sourceTree = "<group>"; };
+		C996CD7180977FCDBDF961846D16D77C /* UIColor+Expanded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Expanded.m"; path = "lottie-ios/Classes/UIColor+Expanded.m"; sourceTree = "<group>"; };
+		CD030DF648AF522E47C8483E5B68DFCB /* LARectShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LARectShapeLayer.m; path = "lottie-ios/Classes/LARectShapeLayer.m"; sourceTree = "<group>"; };
+		CD80EDD9E02FEC826025E9265778F546 /* Pods-Quote MakerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Quote MakerUITests-dummy.m"; sourceTree = "<group>"; };
+		CFA3B52DA1C4739D5B7FCEE7E72875B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FB4DABDBF0CEBE9BF4472F51292474 /* LALayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LALayerView.m; path = "lottie-ios/Classes/LALayerView.m"; sourceTree = "<group>"; };
+		D43EB537EA8EF59F3B43D8EFC26294AF /* Pods-Quote MakerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Quote MakerTests-dummy.m"; sourceTree = "<group>"; };
+		D976AAE19EFB0D5F9216F543BBA1EABA /* LAAnimatableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableValue.h; path = "lottie-ios/Classes/LAAnimatableValue.h"; sourceTree = "<group>"; };
+		DA2D1ABE618AA612564A3B4844823DAC /* LAShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapePath.h; path = "lottie-ios/Classes/LAShapePath.h"; sourceTree = "<group>"; };
+		DA7AA347DD09FACB5D1C4D4ECE23392D /* LAAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimationView.m; path = "lottie-ios/Classes/LAAnimationView.m"; sourceTree = "<group>"; };
+		DAB869E4DF8F69967D325324E60195FC /* lottie-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-prefix.pch"; sourceTree = "<group>"; };
+		DB26FD4EC953D6C956DCEE7E13AF8DFF /* Pods-Quote MakerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Quote MakerUITests.modulemap"; sourceTree = "<group>"; };
+		DB5E67CA3A3E22B6CEAA80F1B4CD173A /* LAShapeTrimPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeTrimPath.h; path = "lottie-ios/Classes/LAShapeTrimPath.h"; sourceTree = "<group>"; };
+		DBCBA66BFB5560B40C5BF0A185F53B7C /* Pods-Quote MakerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Quote MakerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD4625AE99A69FB76E1B9ADC13292592 /* LAEllipseShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAEllipseShapeLayer.h; path = "lottie-ios/Classes/LAEllipseShapeLayer.h"; sourceTree = "<group>"; };
+		E3E3D3D4BA9BCDB8B45D4C894B1331F6 /* LAAnimationTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimationTransitionController.m; path = "lottie-ios/Classes/LAAnimationTransitionController.m"; sourceTree = "<group>"; };
+		E61F2C4CC9099ABB0A6F9B6636EFB527 /* LAShapeLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAShapeLayerView.m; path = "lottie-ios/Classes/LAShapeLayerView.m"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9CB0FD1571EB2B817188992B4772F44 /* LAShapeStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeStroke.h; path = "lottie-ios/Classes/LAShapeStroke.h"; sourceTree = "<group>"; };
+		E9CE86C2C6026109E7503CC84B421E98 /* LAAnimatableBoundsValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatableBoundsValue.m; path = "lottie-ios/Classes/LAAnimatableBoundsValue.m"; sourceTree = "<group>"; };
+		EC707CCC910A24772C18F07C5903A5DA /* LAMaskLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAMaskLayer.h; path = "lottie-ios/Classes/LAMaskLayer.h"; sourceTree = "<group>"; };
+		EE12E9699F44E5EBA055A1968A259891 /* Pods-Quote Maker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Quote Maker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF0F20487D9D8A7B102FF89757E791DF /* LAShapeCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeCircle.h; path = "lottie-ios/Classes/LAShapeCircle.h"; sourceTree = "<group>"; };
+		F24BABB34437B00F513BB8D7116389CD /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
+		F3A9E17167232B9C69FDADFB46244AF2 /* LAShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAShapeRectangle.h; path = "lottie-ios/Classes/LAShapeRectangle.h"; sourceTree = "<group>"; };
+		F600DCAE9572A7D04F6AF9FDC11B5429 /* LAAnimatablePointValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatablePointValue.h; path = "lottie-ios/Classes/LAAnimatablePointValue.h"; sourceTree = "<group>"; };
+		F8118DC28ECC3167F9FFA36A8E8A662F /* LAMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAMask.m; path = "lottie-ios/Classes/LAMask.m"; sourceTree = "<group>"; };
+		F93B1874A48DB76BDAF19EE75EB7F0CC /* Pods-Quote Maker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Quote Maker-umbrella.h"; sourceTree = "<group>"; };
+		FA3E51BBC6846C8E8FAB99E0239FDD05 /* LAAnimatablePointValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LAAnimatablePointValue.m; path = "lottie-ios/Classes/LAAnimatablePointValue.m"; sourceTree = "<group>"; };
+		FD894FA8E73AF8B7B06329E8BB7B8FA6 /* Pods-Quote Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Quote Maker.modulemap"; sourceTree = "<group>"; };
+		FDA69582B2D98C946B59101338A92B49 /* LAAnimatableScaleValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableScaleValue.h; path = "lottie-ios/Classes/LAAnimatableScaleValue.h"; sourceTree = "<group>"; };
+		FF70EF3DF4BBAA80E0BAB6B548314ED5 /* LAAnimatableShapeValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LAAnimatableShapeValue.h; path = "lottie-ios/Classes/LAAnimatableShapeValue.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13AAF4D97721603B1E20BFD493040AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F3245F33150C2214B2C2C786DCA77C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1AB6E8C2A61DD82C77B248803A4292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98FEC25475161549494E45B0747F29E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811C6A0D9D052A5265335148990FADE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0ADDC7136FFE8D526A046DF8759472 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1593C77655B5A74D0BB139A685C81E4D /* lottie-ios */ = {
+			isa = PBXGroup;
+			children = (
+				83F4CD8AE6DF95826D0D51A478DFAA44 /* CAAnimationGroup+LAAnimatableGroup.h */,
+				A02C1C4DD77C2B26F75B30B7AD707941 /* CAAnimationGroup+LAAnimatableGroup.m */,
+				B6335D1EA6E7D7D3D6F00290AE24FCC1 /* CGGeometryAdditions.h */,
+				61812969F0236801444F046EEDC3585C /* CGGeometryAdditions.m */,
+				C625DD063A47F9B2FD2B9F79235C8296 /* LAAnimatableBoundsValue.h */,
+				E9CE86C2C6026109E7503CC84B421E98 /* LAAnimatableBoundsValue.m */,
+				BF236D08B82FF5CD6CE5995587377D4D /* LAAnimatableColorValue.h */,
+				B4531F48BE712FED58EF898DD7435E00 /* LAAnimatableColorValue.m */,
+				1E39A493BE2966B8138403A9468A84CF /* LAAnimatableLayer.h */,
+				9E23DFEE644E74EA99C2E70EBDCF2E3A /* LAAnimatableLayer.m */,
+				9681B521091F6B98F60C26CE5266788B /* LAAnimatableNumberValue.h */,
+				C470DBA5BE5251AA97A04B42DA6DA821 /* LAAnimatableNumberValue.m */,
+				F600DCAE9572A7D04F6AF9FDC11B5429 /* LAAnimatablePointValue.h */,
+				FA3E51BBC6846C8E8FAB99E0239FDD05 /* LAAnimatablePointValue.m */,
+				FDA69582B2D98C946B59101338A92B49 /* LAAnimatableScaleValue.h */,
+				2CD0397E965BBDC5C0335EFF0F6C7CAB /* LAAnimatableScaleValue.m */,
+				FF70EF3DF4BBAA80E0BAB6B548314ED5 /* LAAnimatableShapeValue.h */,
+				6F4A54C008431F7E56A7BFF91DBCC1E7 /* LAAnimatableShapeValue.m */,
+				D976AAE19EFB0D5F9216F543BBA1EABA /* LAAnimatableValue.h */,
+				1A04892F211541F6880F9101CC153F59 /* LAAnimationCache.h */,
+				33EF6EDE313C3774752FCC4153D6BE48 /* LAAnimationCache.m */,
+				6DDE5F73B8135D24647A411BFDDDB85C /* LAAnimationTransitionController.h */,
+				E3E3D3D4BA9BCDB8B45D4C894B1331F6 /* LAAnimationTransitionController.m */,
+				9DA2BCDE21B10E7DC8E5831BBF2D0DC5 /* LAAnimationView.h */,
+				DA7AA347DD09FACB5D1C4D4ECE23392D /* LAAnimationView.m */,
+				6800D8450280D48B26E2F5DF607EB470 /* LAAnimationView_Internal.h */,
+				2783752C346B8D88EF5201F6A9FB9542 /* LAComposition.h */,
+				07F84F234E7183AB6D09C8D46B1E604B /* LAComposition.m */,
+				DD4625AE99A69FB76E1B9ADC13292592 /* LAEllipseShapeLayer.h */,
+				273834AAF56C2894536CA2DB5F2AD132 /* LAEllipseShapeLayer.m */,
+				825159DA69A6DA583EE4838503497D50 /* LAGroupLayerView.h */,
+				801C9DD57FD966559992C331DDF36568 /* LAGroupLayerView.m */,
+				A7BCB75B1CA65B1EDD92E5093B1B2A0F /* LAHelpers.h */,
+				40567B71376983BEAB80170A7A1B2485 /* LALayer.h */,
+				A3A9776B6A34EBFA90FFAEA6C7C5E2B3 /* LALayer.m */,
+				5BF34E2395923731C14FD52EFE70839D /* LALayerView.h */,
+				D0FB4DABDBF0CEBE9BF4472F51292474 /* LALayerView.m */,
+				05F3166C97C8D82646C05FC442E642C0 /* LAMask.h */,
+				F8118DC28ECC3167F9FFA36A8E8A662F /* LAMask.m */,
+				EC707CCC910A24772C18F07C5903A5DA /* LAMaskLayer.h */,
+				A5722475B8C8EFEA5651297D08A2B2E2 /* LAMaskLayer.m */,
+				93A1374CE49F4DD813C1F2A6AFDFD45A /* LAModels.h */,
+				09EDCD9477C329A74378FED4D1AAF23B /* LARectShapeLayer.h */,
+				CD030DF648AF522E47C8483E5B68DFCB /* LARectShapeLayer.m */,
+				EF0F20487D9D8A7B102FF89757E791DF /* LAShapeCircle.h */,
+				13969CC463E25A0635CDDE7655806293 /* LAShapeCircle.m */,
+				4864E00E47429BA02DC5D9A2F23169E4 /* LAShapeFill.h */,
+				A8566F2E96F29187B617313112291134 /* LAShapeFill.m */,
+				1EB4CCF03FB6AF3C765EBCCA123CD232 /* LAShapeGroup.h */,
+				06D5D4D5048B7C15CE3E27775A19B63D /* LAShapeGroup.m */,
+				A154BEA55F44A3291A04846657DA023D /* LAShapeLayerView.h */,
+				E61F2C4CC9099ABB0A6F9B6636EFB527 /* LAShapeLayerView.m */,
+				DA2D1ABE618AA612564A3B4844823DAC /* LAShapePath.h */,
+				A5FD2B99F69454B5D2429923AE24ECF9 /* LAShapePath.m */,
+				F3A9E17167232B9C69FDADFB46244AF2 /* LAShapeRectangle.h */,
+				94146153D05E6266F1B91F2E5A51BF1D /* LAShapeRectangle.m */,
+				E9CB0FD1571EB2B817188992B4772F44 /* LAShapeStroke.h */,
+				924453B09A6C6845BA1A00B10D7FE841 /* LAShapeStroke.m */,
+				000A877AE92E8F080B87BDBE7A1AB03E /* LAShapeTransform.h */,
+				02ADA2265128CABE60A9901C76AAB873 /* LAShapeTransform.m */,
+				DB5E67CA3A3E22B6CEAA80F1B4CD173A /* LAShapeTrimPath.h */,
+				788ABC3137416FD13614617F09A3BA01 /* LAShapeTrimPath.m */,
+				712D527D466E1800B5F23EFC6F13F5EB /* Lottie.h */,
+				5F58CFB7D85035FFE25EEE180C04A071 /* UIColor+Expanded.h */,
+				C996CD7180977FCDBDF961846D16D77C /* UIColor+Expanded.m */,
+				E3432EBA95B313A40EE4E7AE879E1DFA /* Support Files */,
+			);
+			path = "lottie-ios";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5213376AA218141FFAC157194FF170F5 /* Pods-Quote MakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFA3B52DA1C4739D5B7FCEE7E72875B2 /* Info.plist */,
+				855B457834441C03D89AB3932D15F985 /* Pods-Quote MakerTests.modulemap */,
+				B06A39B4B816EFE5FF8FE56961B7B3D5 /* Pods-Quote MakerTests-acknowledgements.markdown */,
+				DBCBA66BFB5560B40C5BF0A185F53B7C /* Pods-Quote MakerTests-acknowledgements.plist */,
+				D43EB537EA8EF59F3B43D8EFC26294AF /* Pods-Quote MakerTests-dummy.m */,
+				1A27BE87A22256AC1FF522A2C9AA9E24 /* Pods-Quote MakerTests-frameworks.sh */,
+				4303AC36DC45F2184E9193BF436F7902 /* Pods-Quote MakerTests-resources.sh */,
+				426BB35F0E9F981778AC6835EBA88215 /* Pods-Quote MakerTests-umbrella.h */,
+				B261BD147DEA553AA85585DF43BEE951 /* Pods-Quote MakerTests.debug.xcconfig */,
+				B4F5714A02D92F1CB22D4BEFD2E18DBC /* Pods-Quote MakerTests.release.xcconfig */,
+			);
+			name = "Pods-Quote MakerTests";
+			path = "Target Support Files/Pods-Quote MakerTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				AFBD2997FD00BFDBE6FE9809349F6E43 /* Pods */,
+				A455211272F23B6ABF2A49234D3433A5 /* Products */,
+				9B833DE00A1A5C3A0090B4040513AE6F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B833DE00A1A5C3A0090B4040513AE6F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AE3391D99B42F7955D6A03325D3CF /* Pods-Quote Maker */,
+				5213376AA218141FFAC157194FF170F5 /* Pods-Quote MakerTests */,
+				D181879B1A937D7426FB96DF76830366 /* Pods-Quote MakerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A455211272F23B6ABF2A49234D3433A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01A32C6378354D24DF9355B512AD44D /* Pods_Quote_Maker.framework */,
+				3C6E88051EDA078800BBA9BD3C75F2F2 /* Pods_Quote_MakerTests.framework */,
+				9D9B03AA1B96B76E1C5AFD593514C38D /* Pods_Quote_MakerUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFBD2997FD00BFDBE6FE9809349F6E43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1593C77655B5A74D0BB139A685C81E4D /* lottie-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D181879B1A937D7426FB96DF76830366 /* Pods-Quote MakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46DC466506DE43692E017DAB9A5BBB8C /* Info.plist */,
+				DB26FD4EC953D6C956DCEE7E13AF8DFF /* Pods-Quote MakerUITests.modulemap */,
+				3DF9547AF77B2BC18C0ACE70F8869154 /* Pods-Quote MakerUITests-acknowledgements.markdown */,
+				4AA91F5438EBE29A12AF36C012271E56 /* Pods-Quote MakerUITests-acknowledgements.plist */,
+				CD80EDD9E02FEC826025E9265778F546 /* Pods-Quote MakerUITests-dummy.m */,
+				B5D0D44A0CD5F5F0755FADDF16C1DBCF /* Pods-Quote MakerUITests-frameworks.sh */,
+				3C3672D16027F34B6B750CF07B904154 /* Pods-Quote MakerUITests-resources.sh */,
+				55275F0B010F8CC0A29223716E2FD8E7 /* Pods-Quote MakerUITests-umbrella.h */,
+				7799628124ADA3E02E24B238BBA58ADB /* Pods-Quote MakerUITests.debug.xcconfig */,
+				6D2A90F1EA51817C821B4D419E447C9E /* Pods-Quote MakerUITests.release.xcconfig */,
+			);
+			name = "Pods-Quote MakerUITests";
+			path = "Target Support Files/Pods-Quote MakerUITests";
+			sourceTree = "<group>";
+		};
+		E3432EBA95B313A40EE4E7AE879E1DFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				861FC31F89B799C69D402C8B20D93B03 /* Info.plist */,
+				F24BABB34437B00F513BB8D7116389CD /* lottie-ios.modulemap */,
+				5F5725E190651B7A298A6EDF2C42921B /* lottie-ios.xcconfig */,
+				A1F444F81AC54D2272C45B00F11B514D /* lottie-ios-dummy.m */,
+				DAB869E4DF8F69967D325324E60195FC /* lottie-ios-prefix.pch */,
+				8B1B9F342BD37EC46DA4701CF826B93A /* lottie-ios-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/lottie-ios";
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FA9AE3391D99B42F7955D6A03325D3CF /* Pods-Quote Maker */ = {
+			isa = PBXGroup;
+			children = (
+				57089D53B88097AA9C06A8C58B83809A /* Info.plist */,
+				FD894FA8E73AF8B7B06329E8BB7B8FA6 /* Pods-Quote Maker.modulemap */,
+				EE12E9699F44E5EBA055A1968A259891 /* Pods-Quote Maker-acknowledgements.markdown */,
+				B6475796EAA98D03B687CBB030B7AAD0 /* Pods-Quote Maker-acknowledgements.plist */,
+				5F2DB81561CD609ECC67F172ECE19993 /* Pods-Quote Maker-dummy.m */,
+				62C60553EB639D47D15DF7EDCE5A1668 /* Pods-Quote Maker-frameworks.sh */,
+				252F2F08307E069A9ECBAFF148F85B9B /* Pods-Quote Maker-resources.sh */,
+				F93B1874A48DB76BDAF19EE75EB7F0CC /* Pods-Quote Maker-umbrella.h */,
+				2BB522B51525273772F65F1FF24DF561 /* Pods-Quote Maker.debug.xcconfig */,
+				8BFE708C8C5C4CC6997A730CB2C5E423 /* Pods-Quote Maker.release.xcconfig */,
+			);
+			name = "Pods-Quote Maker";
+			path = "Target Support Files/Pods-Quote Maker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A9039DECE9623903ACA6C921BD44483 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7009CD492717715E916F8B7B3084A5 /* Pods-Quote Maker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E1CD7A560BE29A025F1150F813430 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979FD174F4BA39791E6849F6E8F82CA8 /* Pods-Quote MakerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE49206D9732A78BD881EB29251D9FB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F32D7B90E3597CDB5E2AE26EAC11D97 /* Pods-Quote MakerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18D84B5052F41C7698E846C55044705A /* Pods-Quote MakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC12738B5CD362B0CE49D0E8E34B2E2E /* Build configuration list for PBXNativeTarget "Pods-Quote MakerTests" */;
+			buildPhases = (
+				6DE1252C86C15E81242E44B0D288F27F /* Sources */,
+				13AAF4D97721603B1E20BFD493040AB5 /* Frameworks */,
+				C23E1CD7A560BE29A025F1150F813430 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Quote MakerTests";
+			productName = "Pods-Quote MakerTests";
+			productReference = 3C6E88051EDA078800BBA9BD3C75F2F2 /* Pods_Quote_MakerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D1F227E8F1CB620C5B6FE9E0A7B507D /* Pods-Quote Maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC777395C3606FEF5E10353D3DD0BB85 /* Build configuration list for PBXNativeTarget "Pods-Quote Maker" */;
+			buildPhases = (
+				500C5CD66870ECC34B7ABB4AED0E0183 /* Sources */,
+				6E1AB6E8C2A61DD82C77B248803A4292 /* Frameworks */,
+				2A9039DECE9623903ACA6C921BD44483 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Quote Maker";
+			productName = "Pods-Quote Maker";
+			productReference = A01A32C6378354D24DF9355B512AD44D /* Pods_Quote_Maker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FBFD370C2E3FA1FC3D262BFAC38173D /* Pods-Quote MakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D3E29776DC8C99C6A012F87C458F70 /* Build configuration list for PBXNativeTarget "Pods-Quote MakerUITests" */;
+			buildPhases = (
+				34838BA8A9094E85A360879C3A0A424D /* Sources */,
+				811C6A0D9D052A5265335148990FADE8 /* Frameworks */,
+				DE49206D9732A78BD881EB29251D9FB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Quote MakerUITests";
+			productName = "Pods-Quote MakerUITests";
+			productReference = 9D9B03AA1B96B76E1C5AFD593514C38D /* Pods_Quote_MakerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A455211272F23B6ABF2A49234D3433A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1F227E8F1CB620C5B6FE9E0A7B507D /* Pods-Quote Maker */,
+				18D84B5052F41C7698E846C55044705A /* Pods-Quote MakerTests */,
+				4FBFD370C2E3FA1FC3D262BFAC38173D /* Pods-Quote MakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34838BA8A9094E85A360879C3A0A424D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAE2404A26B53C5AFBB85DB36483F36 /* Pods-Quote MakerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500C5CD66870ECC34B7ABB4AED0E0183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016E049D5C630202936AA87EC77F7EA3 /* Pods-Quote Maker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE1252C86C15E81242E44B0D288F27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B22E738ECDC56C7E41897B3E459263 /* Pods-Quote MakerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4F82B4C1F9F951DD74440FD56408D4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7799628124ADA3E02E24B238BBA58ADB /* Pods-Quote MakerUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote MakerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_MakerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56DE0B90FCCE3F22A23622D7D8621CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2A90F1EA51817C821B4D419E447C9E /* Pods-Quote MakerUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote MakerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_MakerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D045B00546D4C1A922A13C5D674E59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFE708C8C5C4CC6997A730CB2C5E423 /* Pods-Quote Maker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote Maker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote Maker/Pods-Quote Maker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_Maker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADEE436F6ABBE39694EBBB752B5AA188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB522B51525273772F65F1FF24DF561 /* Pods-Quote Maker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote Maker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote Maker/Pods-Quote Maker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_Maker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6C2B66095B7EF2D38034D776682F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F5714A02D92F1CB22D4BEFD2E18DBC /* Pods-Quote MakerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote MakerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_MakerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E537038A29C2E8BF5ED6AB1129FC843C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B261BD147DEA553AA85585DF43BEE951 /* Pods-Quote MakerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quote MakerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quote_MakerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D3E29776DC8C99C6A012F87C458F70 /* Build configuration list for PBXNativeTarget "Pods-Quote MakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F82B4C1F9F951DD74440FD56408D4DA /* Debug */,
+				56DE0B90FCCE3F22A23622D7D8621CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC12738B5CD362B0CE49D0E8E34B2E2E /* Build configuration list for PBXNativeTarget "Pods-Quote MakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E537038A29C2E8BF5ED6AB1129FC843C /* Debug */,
+				CC6C2B66095B7EF2D38034D776682F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC777395C3606FEF5E10353D3DD0BB85 /* Build configuration list for PBXNativeTarget "Pods-Quote Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEE436F6ABBE39694EBBB752B5AA188 /* Debug */,
+				9D045B00546D4C1A922A13C5D674E59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

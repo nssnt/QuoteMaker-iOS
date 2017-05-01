@@ -94,6 +94,7 @@
 		58C8E2A51EA2A9D0001D4530 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		58C8E2A61EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		58DBB1A91EB78E8800337408 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = "Pods/../build/Debug-iphoneos/lottie-ios/Lottie.framework"; sourceTree = "<group>"; };
 		61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote_MakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A9F50EFFEF57E08203527E /* Pods-Quote MakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerUITests/Pods-Quote MakerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		98315917872242E0B02BCF18 /* Pods-Quote MakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +268,7 @@
 		D23D02657A879A4AB519F0E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58DBB1A91EB78E8800337408 /* Lottie.framework */,
 				EBB8D9800109749408DE6128 /* Pods_Quote_Maker.framework */,
 				AC7C37DAC4E291CEAB346CE3 /* Pods_Quote_MakerTests.framework */,
 				61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */,
@@ -627,6 +629,7 @@
 /* Begin XCBuildConfiguration section */
 		5849B2A01E43BE3F00D519E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0D3F9EB5F3B68CF8EA84BE /* Pods-Quote Maker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -675,6 +678,7 @@
 		};
 		5849B2A11E43BE3F00D519E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD53D7C01F8F38390799741 /* Pods-Quote Maker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -721,12 +725,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = U2888GAKZ7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Quote\\ Maker",
 					"$(PROJECT_DIR)/Quote\\ Maker",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 				);
 				INFOPLIST_FILE = "Quote Maker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -736,6 +742,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 			};
 			name = Debug;
 		};
@@ -745,12 +752,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = U2888GAKZ7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Quote\\ Maker",
 					"$(PROJECT_DIR)/Quote\\ Maker",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/lottie-ios",
 				);
 				INFOPLIST_FILE = "Quote Maker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -759,6 +768,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 			};
 			name = Release;
 		};

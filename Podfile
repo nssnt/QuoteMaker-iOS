@@ -6,6 +6,8 @@ target 'Quote Maker' do
   use_frameworks!
 
   # Pods for Quote Maker
+	
+pod 'lottie-ios'
 
   target 'Quote MakerTests' do
     inherit! :search_paths
