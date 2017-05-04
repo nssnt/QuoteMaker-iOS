@@ -72,7 +72,6 @@
         SVC.modalPresentationStyle = UIModalPresentationCustom;
         
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
-
         
     }
     
