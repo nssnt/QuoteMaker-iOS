@@ -155,7 +155,7 @@
 		5849B2771E43BE3E00D519E4 /* Quote Maker */ = {
 			isa = PBXGroup;
 			children = (
-				58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */,
+				58EDB8291EC8E101007B84BB /* External Libraries */,
 				589F2B1C1E9969CD006BFDD3 /* Animation Controllers */,
 				58663E261E90223E000F1806 /* Utils */,
 				5849B2AB1E43C1BF00D519E4 /* Fonts */,
@@ -233,8 +233,6 @@
 		58663E261E90223E000F1806 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
-				586640551E90550F000F1806 /* UIImage+ImageEffects.m */,
 				58663E271E90228A000F1806 /* Utilities.h */,
 				58663E281E90228A000F1806 /* Utilities.m */,
 			);
@@ -263,6 +261,16 @@
 				58C8E2A71EA2A9D0001D4530 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		58EDB8291EC8E101007B84BB /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
+				586640551E90550F000F1806 /* UIImage+ImageEffects.m */,
+				58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */,
+			);
+			name = "External Libraries";
 			sourceTree = "<group>";
 		};
 		D23D02657A879A4AB519F0E8 /* Frameworks */ = {
