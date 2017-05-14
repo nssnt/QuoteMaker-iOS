@@ -194,9 +194,7 @@
         {
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 if (granted) {
-                    
                     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-                    
                 } else {
                     NSLog(@"Redirect to settings page to enable camera access or throw a message");
                 }
@@ -226,14 +224,16 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
+            //Clearing previous images from background and from our variable 'actualBGImage'
             actualBGImage = nil;
             self.imageView.image = nil;
             
             //We compress the image so that it does not take too long to process large images
             UIImage *compressedImage = [[Utilities sharedManager] scaleImage:[UIImage imageWithData: UIImageJPEGRepresentation([info valueForKey:UIImagePickerControllerOriginalImage], 0.5)] toSize:CGSizeMake(1200, 1200)];
             
-            //We save picked images to device (In future this feature can be toggled in settings)
-            [self saveCapturedImageToDevice:[info valueForKey:UIImagePickerControllerOriginalImage]];
+            //We save picked images (Camera) to device (In future this feature can be toggled in settings)
+            if (picker.sourceType == UIImagePickerControllerSourceTypeCamera)
+                [self saveCapturedImageToDevice:[info valueForKey:UIImagePickerControllerOriginalImage]];
             
             //Set selected image as background
             self.imageView.image = compressedImage;
@@ -242,6 +242,7 @@
             self.imageView.contentMode = UIViewContentModeScaleAspectFill;
             self.imageView.clipsToBounds = YES;
             
+            //Comment yet to be added for this step
             [biv removeFromSuperview];
             biv = nil;
             biv = [[UIImageView alloc] initWithFrame:self.view.frame];
