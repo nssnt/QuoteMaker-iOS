@@ -11,6 +11,7 @@
 #import "UIImage+ImageEffects.h"
 #import "Animator.h"
 #import <Social/Social.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     
@@ -158,6 +159,7 @@
 -(IBAction)saveButtonTouched:(id)sender{
     
     @autoreleasepool {
+        
         UIImage *image = [self imageWithView:self.view];
         
         self.addImageButton.hidden = NO;
@@ -166,7 +168,8 @@
         self.slider.hidden = NO;
         self.shareButton.hidden = NO;
         
-        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
+        [self saveCapturedImageToDevice:image];
+        
     }
 }
 
@@ -176,6 +179,46 @@
     
 }
 
+
+-(void)saveCapturedImageToDevice: (UIImage *)image {
+    
+    switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]) {
+            
+        case AVAuthorizationStatusDenied:
+        {
+            NSLog(@"Redirect to settings page to enable camera access!");
+            break;
+        }
+            
+        case AVAuthorizationStatusNotDetermined:
+        {
+            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+                if (granted) {
+                    
+                    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+                    
+                } else {
+                    NSLog(@"Redirect to settings page to enable camera access or throw a message");
+                }
+                
+            }];
+            break;
+        }
+            
+        case AVAuthorizationStatusAuthorized:
+        {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+            break;
+        }
+            
+        default:
+        {
+            break;
+        }
+            
+    }
+    
+}
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     
@@ -190,7 +233,7 @@
             UIImage *compressedImage = [[Utilities sharedManager] scaleImage:[UIImage imageWithData: UIImageJPEGRepresentation([info valueForKey:UIImagePickerControllerOriginalImage], 0.5)] toSize:CGSizeMake(1200, 1200)];
             
             //We save picked images to device (In future this feature can be toggled in settings)
-            UIImageWriteToSavedPhotosAlbum([info valueForKey:UIImagePickerControllerOriginalImage], nil, nil, nil);
+            [self saveCapturedImageToDevice:[info valueForKey:UIImagePickerControllerOriginalImage]];
             
             //Set selected image as background
             self.imageView.image = compressedImage;
@@ -226,6 +269,7 @@
     
     @autoreleasepool {
         
+        //We hide these HUDs to make sure we get only the content to be shared clearly
         self.addImageButton.hidden = YES;
         self.saveButton.hidden = YES;
         self.closeButton.hidden = YES;
@@ -235,6 +279,8 @@
         if(!self.imageView.image){
             self.captureView.backgroundColor = self.view.backgroundColor;
         }
+        
+        //Create Image
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
         [view.layer renderInContext:UIGraphicsGetCurrentContext()];
         
