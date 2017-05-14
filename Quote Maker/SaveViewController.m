@@ -117,12 +117,12 @@
     alert.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
     
     UIAlertAction *camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self presentPicker: @"Camera"];
+        [self presentPicker: CameraSourceTypeCamera];
         
     }];
     
     UIAlertAction *library = [UIAlertAction actionWithTitle:@"Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self presentPicker: @"Library"];
+        [self presentPicker: CameraSourceTypeLibrary];
     }];
     
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -137,16 +137,17 @@
     
 }
 
-- (void)presentPicker:(NSString *) sourceType {
+- (void)presentPicker:(NSInteger) sourceType {
     
     if(pickerController == nil){
         
         @autoreleasepool {
+            
             pickerController = [[UIImagePickerController alloc]init];
             pickerController.delegate = self;
             pickerController.allowsEditing = NO;
             
-            [pickerController setSourceType: [sourceType isEqualToString: @"Library"] ? UIImagePickerControllerSourceTypePhotoLibrary : UIImagePickerControllerSourceTypeCamera];
+            [pickerController setSourceType: sourceType == CameraSourceTypeLibrary ? UIImagePickerControllerSourceTypePhotoLibrary : UIImagePickerControllerSourceTypeCamera];
         }
         
     }
@@ -185,8 +186,13 @@
             actualBGImage = nil;
             self.imageView.image = nil;
             
-            UIImage *compressedImage = [[Utilities sharedManager] scaleImage:[UIImage imageWithData: UIImageJPEGRepresentation([info valueForKey:UIImagePickerControllerOriginalImage], 0.5)] toSize:CGSizeMake(1200, 1200)]; ;
+            //We compress the image so that it does not take too long to process large images
+            UIImage *compressedImage = [[Utilities sharedManager] scaleImage:[UIImage imageWithData: UIImageJPEGRepresentation([info valueForKey:UIImagePickerControllerOriginalImage], 0.5)] toSize:CGSizeMake(1200, 1200)];
             
+            //We save picked images to device (In future this feature can be toggled in settings)
+            UIImageWriteToSavedPhotosAlbum([info valueForKey:UIImagePickerControllerOriginalImage], nil, nil, nil);
+            
+            //Set selected image as background
             self.imageView.image = compressedImage;
             actualBGImage = compressedImage;
             
@@ -206,6 +212,9 @@
             [self.imageView addSubview:biv];
             
             [picker dismissViewControllerAnimated:YES completion:nil];
+            
+            //Set pickerController to nil to be able to choose another sourceType when clicking the '+' button again.
+            self->pickerController = nil;
             
         });
     });

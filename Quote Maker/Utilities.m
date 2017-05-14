@@ -48,8 +48,10 @@
 
 
 - (UIImage*) scaleImage:(UIImage*)image toSize:(CGSize)newSize {
+    
     CGSize scaledSize = newSize;
     float scaleFactor = 1.0;
+    
     if( image.size.width > image.size.height ) {
         scaleFactor = image.size.width / image.size.height;
         scaledSize.width = newSize.width;

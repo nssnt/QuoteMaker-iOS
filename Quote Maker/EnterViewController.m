@@ -9,7 +9,6 @@
 #import "EnterViewController.h"
 #import "SaveViewController.h"
 #import "Animator.h"
-#import <Lottie/Lottie.h>
 
 
 @interface EnterViewController ()<UITextFieldDelegate, UITextViewDelegate, UIViewControllerTransitioningDelegate> {

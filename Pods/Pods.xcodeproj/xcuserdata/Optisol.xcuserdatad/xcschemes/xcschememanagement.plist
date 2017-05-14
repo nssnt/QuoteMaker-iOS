@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>lottie-ios.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -32,12 +27,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A9EDD5C4151360AA6A7D3514EC77EEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D1F227E8F1CB620C5B6FE9E0A7B507D</key>
+		<key>244973453F2CFEA7F0F8F300060C21B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
