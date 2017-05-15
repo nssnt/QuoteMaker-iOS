@@ -112,6 +112,8 @@
 
 - (void)showImagePickingActionSheet {
     
+    pickerController = nil;
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     alert.popoverPresentationController.sourceView = self.view;
@@ -258,7 +260,7 @@
             [picker dismissViewControllerAnimated:YES completion:nil];
             
             //Set pickerController to nil to be able to choose another sourceType when clicking the '+' button again.
-            self->pickerController = nil;
+            pickerController = nil;
             
         });
     });
