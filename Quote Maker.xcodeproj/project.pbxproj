@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		25D3548D9AE6B9CC35F18F38 /* Pods_Quote_MakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E75C9B3583BBD48FF7D1B9 /* Pods_Quote_MakerUITests.framework */; };
 		2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB8D9800109749408DE6128 /* Pods_Quote_Maker.framework */; };
+		581507451EDB609E0015C2D7 /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5815073D1EDB609E0015C2D7 /* colormap.png */; };
+		581507461EDB609E0015C2D7 /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5815073F1EDB609E0015C2D7 /* FCBrightDarkGradView.m */; };
+		581507471EDB609E0015C2D7 /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581507411EDB609E0015C2D7 /* FCColorPickerViewController.m */; };
+		581507481EDB609E0015C2D7 /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581507421EDB609E0015C2D7 /* FCColorPickerViewController.xib */; };
+		581507491EDB609E0015C2D7 /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581507441EDB609E0015C2D7 /* FCColorSwatchView.m */; };
 		5849B27A1E43BE3E00D519E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2791E43BE3E00D519E4 /* main.m */; };
 		5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27C1E43BE3E00D519E4 /* AppDelegate.m */; };
 		5849B2801E43BE3E00D519E4 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27F1E43BE3E00D519E4 /* EnterViewController.m */; };
@@ -55,6 +60,14 @@
 		1BD53D7C01F8F38390799741 /* Pods-Quote Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote Maker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker.release.xcconfig"; sourceTree = "<group>"; };
 		3945D2A60FA4F4FAB9A90DB9 /* Pods-Quote MakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote MakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quote MakerTests/Pods-Quote MakerTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A0D3F9EB5F3B68CF8EA84BE /* Pods-Quote Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quote Maker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quote Maker/Pods-Quote Maker.debug.xcconfig"; sourceTree = "<group>"; };
+		5815073D1EDB609E0015C2D7 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		5815073E1EDB609E0015C2D7 /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		5815073F1EDB609E0015C2D7 /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		581507401EDB609E0015C2D7 /* FCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		581507411EDB609E0015C2D7 /* FCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		581507421EDB609E0015C2D7 /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		581507431EDB609E0015C2D7 /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
+		581507441EDB609E0015C2D7 /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
 		5849B2751E43BE3E00D519E4 /* Quote Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quote Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5849B2791E43BE3E00D519E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5849B27B1E43BE3E00D519E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +143,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5815073C1EDB609E0015C2D7 /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				5815073D1EDB609E0015C2D7 /* colormap.png */,
+				5815073E1EDB609E0015C2D7 /* FCBrightDarkGradView.h */,
+				5815073F1EDB609E0015C2D7 /* FCBrightDarkGradView.m */,
+				581507401EDB609E0015C2D7 /* FCColorPickerViewController.h */,
+				581507411EDB609E0015C2D7 /* FCColorPickerViewController.m */,
+				581507421EDB609E0015C2D7 /* FCColorPickerViewController.xib */,
+				581507431EDB609E0015C2D7 /* FCColorSwatchView.h */,
+				581507441EDB609E0015C2D7 /* FCColorSwatchView.m */,
+			);
+			path = "Color Picker";
+			sourceTree = "<group>";
+		};
 		5849B26C1E43BE3E00D519E4 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +297,7 @@
 				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
 				586640551E90550F000F1806 /* UIImage+ImageEffects.m */,
 				58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */,
+				5815073C1EDB609E0015C2D7 /* Color Picker */,
 			);
 			name = "External Libraries";
 			sourceTree = "<group>";
@@ -419,6 +448,8 @@
 				5849B2B01E43C21600D519E4 /* Bevan-Regular.ttf in Resources */,
 				5849B2B11E43C21600D519E4 /* GrandHotel-Regular.ttf in Resources */,
 				5849B2881E43BE3E00D519E4 /* LaunchScreen.storyboard in Resources */,
+				581507451EDB609E0015C2D7 /* colormap.png in Resources */,
+				581507481EDB609E0015C2D7 /* FCColorPickerViewController.xib in Resources */,
 				5849B2851E43BE3E00D519E4 /* Assets.xcassets in Resources */,
 				5849B2831E43BE3E00D519E4 /* Main.storyboard in Resources */,
 			);
@@ -577,8 +608,11 @@
 				586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */,
 				5849B2B61E43CE9B00D519E4 /* SaveViewController.m in Sources */,
 				5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */,
+				581507471EDB609E0015C2D7 /* FCColorPickerViewController.m in Sources */,
 				58C198B21EA60744005931B5 /* NonClippingLabel.m in Sources */,
+				581507491EDB609E0015C2D7 /* FCColorSwatchView.m in Sources */,
 				58C8E2AA1EA2A9D1001D4530 /* TPKeyboardAvoidingTableView.m in Sources */,
+				581507461EDB609E0015C2D7 /* FCBrightDarkGradView.m in Sources */,
 				5849B27A1E43BE3E00D519E4 /* main.m in Sources */,
 				58663E291E90228A000F1806 /* Utilities.m in Sources */,
 			);

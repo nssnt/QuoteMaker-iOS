@@ -12,13 +12,15 @@
 #import "Animator.h"
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
+#import "FCColorPickerViewController.h"
 
-@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
+@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate>{
     
     UIImagePickerController *pickerController;
     UIImage *actualBGImage;
     UIImageView *biv;
     Animator *animator;
+    UIColor *textColor;
 }
 
 @end
@@ -39,10 +41,28 @@
     
 }
 
+- (void)updateMainLabelTextColor {
+    
+    if (textColor != nil) {
+        self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
+    } else {
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        NSData * colorData = [ud objectForKey: @"UD_TEXT_COLOR"];
+        
+        textColor = [NSKeyedUnarchiver unarchiveObjectWithData:colorData];
+        
+        if (textColor != nil) {
+            self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
+        }
+    }
+    
+}
+
 - (void)initViewController {
     
     UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:125];
     
+    [self updateMainLabelTextColor];
     self.mainLabel.font = font;
     self.mainLabel.text = quoteText;
     self.mainLabel.lineBreakMode = NSLineBreakByClipping;
@@ -82,31 +102,35 @@
 
 -(IBAction)shareButtonTouched:(id)sender {
     
-    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]) {
-        
-        SLComposeViewController __weak *composeViewController = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
-        [composeViewController addImage: [self imageWithView:self.view]];
-        
-        [composeViewController setCompletionHandler: ^(SLComposeViewControllerResult result) {
-            
-            switch (result) {
-                    
-                case SLComposeViewControllerResultCancelled:
-                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
-                    break;
-                case SLComposeViewControllerResultDone:
-                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
-                    break;
-                default:
-                    break;
-            }
-            
-        }];
-        
-        [self presentViewController:composeViewController animated:YES completion:nil];
-    } else {
-        NSLog(@"Facebook sharing not enabled. This is a simulator");
-    }
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: [UIColor whiteColor] delegate: self];
+    
+    [self presentViewController:colorPicker animated:YES completion: nil];
+    
+//    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]) {
+//        
+//        SLComposeViewController __weak *composeViewController = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
+//        [composeViewController addImage: [self imageWithView:self.view]];
+//        
+//        [composeViewController setCompletionHandler: ^(SLComposeViewControllerResult result) {
+//            
+//            switch (result) {
+//                    
+//                case SLComposeViewControllerResultCancelled:
+//                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
+//                    break;
+//                case SLComposeViewControllerResultDone:
+//                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
+//                    break;
+//                default:
+//                    break;
+//            }
+//            
+//        }];
+//        
+//        [self presentViewController:composeViewController animated:YES completion:nil];
+//    } else {
+//        NSLog(@"Facebook sharing not enabled. This is a simulator");
+//    }
     
 }
 
@@ -324,5 +348,20 @@
     }
 }
 
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+    
+    textColor = color;
+    NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color];
+    [[NSUserDefaults standardUserDefaults] setObject: colorData forKey: @"UD_TEXT_COLOR"];
+    
+    [self updateMainLabelTextColor];
+    [colorPicker dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
+
+    [colorPicker dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
