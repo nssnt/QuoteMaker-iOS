@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface EnterViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *mainTextView;
 @property (weak, nonatomic) IBOutlet UIButton *previewButton;
+@property (weak, nonatomic) IBOutlet GADBannerView *adView;
 
 -(IBAction)previewButtonPressed:(id)sender;
 

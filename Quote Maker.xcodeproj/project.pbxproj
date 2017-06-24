@@ -14,6 +14,8 @@
 		581507471EDB609E0015C2D7 /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581507411EDB609E0015C2D7 /* FCColorPickerViewController.m */; };
 		581507481EDB609E0015C2D7 /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581507421EDB609E0015C2D7 /* FCColorPickerViewController.xib */; };
 		581507491EDB609E0015C2D7 /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581507441EDB609E0015C2D7 /* FCColorSwatchView.m */; };
+		584365EB1EFEE8B70095388A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584365EA1EFEE8B70095388A /* GoogleMobileAds.framework */; };
+		5843660E1EFEFF260095388A /* Langdon.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5843660C1EFEFCE80095388A /* Langdon.otf */; };
 		5849B27A1E43BE3E00D519E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2791E43BE3E00D519E4 /* main.m */; };
 		5849B27D1E43BE3E00D519E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27C1E43BE3E00D519E4 /* AppDelegate.m */; };
 		5849B2801E43BE3E00D519E4 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B27F1E43BE3E00D519E4 /* EnterViewController.m */; };
@@ -22,8 +24,6 @@
 		5849B2881E43BE3E00D519E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5849B2861E43BE3E00D519E4 /* LaunchScreen.storyboard */; };
 		5849B2931E43BE3F00D519E4 /* Quote_MakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2921E43BE3F00D519E4 /* Quote_MakerTests.m */; };
 		5849B29E1E43BE3F00D519E4 /* Quote_MakerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B29D1E43BE3F00D519E4 /* Quote_MakerUITests.m */; };
-		5849B2AF1E43C21600D519E4 /* Slot-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5849B2AC1E43C1CC00D519E4 /* Slot-Regular.ttf */; };
-		5849B2B01E43C21600D519E4 /* Bevan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5849B2AD1E43C1D500D519E4 /* Bevan-Regular.ttf */; };
 		5849B2B11E43C21600D519E4 /* GrandHotel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5849B2AE1E43C21000D519E4 /* GrandHotel-Regular.ttf */; };
 		5849B2B61E43CE9B00D519E4 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2B51E43CE9B00D519E4 /* SaveViewController.m */; };
 		58663E291E90228A000F1806 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 58663E281E90228A000F1806 /* Utilities.m */; };
@@ -68,6 +68,8 @@
 		581507421EDB609E0015C2D7 /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
 		581507431EDB609E0015C2D7 /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
 		581507441EDB609E0015C2D7 /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
+		584365EA1EFEE8B70095388A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.21.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		5843660C1EFEFCE80095388A /* Langdon.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Langdon.otf; sourceTree = "<group>"; };
 		5849B2751E43BE3E00D519E4 /* Quote Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quote Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5849B2791E43BE3E00D519E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5849B27B1E43BE3E00D519E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,8 +86,6 @@
 		5849B2991E43BE3F00D519E4 /* Quote MakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quote MakerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5849B29D1E43BE3F00D519E4 /* Quote_MakerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quote_MakerUITests.m; sourceTree = "<group>"; };
 		5849B29F1E43BE3F00D519E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5849B2AC1E43C1CC00D519E4 /* Slot-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slot-Regular.ttf"; sourceTree = "<group>"; };
-		5849B2AD1E43C1D500D519E4 /* Bevan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bevan-Regular.ttf"; sourceTree = "<group>"; };
 		5849B2AE1E43C21000D519E4 /* GrandHotel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.ttf"; sourceTree = "<group>"; };
 		5849B2B41E43CE9B00D519E4 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		5849B2B51E43CE9B00D519E4 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584365EB1EFEE8B70095388A /* GoogleMobileAds.framework in Frameworks */,
 				2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +230,8 @@
 		5849B2AB1E43C1BF00D519E4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5849B2AC1E43C1CC00D519E4 /* Slot-Regular.ttf */,
-				5849B2AD1E43C1D500D519E4 /* Bevan-Regular.ttf */,
 				5849B2AE1E43C21000D519E4 /* GrandHotel-Regular.ttf */,
+				5843660C1EFEFCE80095388A /* Langdon.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -294,6 +294,7 @@
 		58EDB8291EC8E101007B84BB /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				584365EA1EFEE8B70095388A /* GoogleMobileAds.framework */,
 				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
 				586640551E90550F000F1806 /* UIImage+ImageEffects.m */,
 				58C8E29F1EA2A9D0001D4530 /* TPKeyboardAvoiding */,
@@ -444,13 +445,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5849B2AF1E43C21600D519E4 /* Slot-Regular.ttf in Resources */,
-				5849B2B01E43C21600D519E4 /* Bevan-Regular.ttf in Resources */,
 				5849B2B11E43C21600D519E4 /* GrandHotel-Regular.ttf in Resources */,
-				5849B2881E43BE3E00D519E4 /* LaunchScreen.storyboard in Resources */,
 				581507451EDB609E0015C2D7 /* colormap.png in Resources */,
 				581507481EDB609E0015C2D7 /* FCColorPickerViewController.xib in Resources */,
+				5849B2881E43BE3E00D519E4 /* LaunchScreen.storyboard in Resources */,
 				5849B2851E43BE3E00D519E4 /* Assets.xcassets in Resources */,
+				5843660E1EFEFF260095388A /* Langdon.otf in Resources */,
 				5849B2831E43BE3E00D519E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

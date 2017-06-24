@@ -55,12 +55,11 @@
             self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
         }
     }
-    
 }
 
 - (void)initViewController {
     
-    UIFont *font = [UIFont fontWithName:@"GrandHotel-Regular" size:125];
+    UIFont *font = [UIFont fontWithName:@"Langdon" size:125];
     
     [self updateMainLabelTextColor];
     self.mainLabel.font = font;
@@ -101,37 +100,9 @@
 }
 
 -(IBAction)shareButtonTouched:(id)sender {
-    
     FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: [UIColor whiteColor] delegate: self];
     
     [self presentViewController:colorPicker animated:YES completion: nil];
-    
-//    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]) {
-//        
-//        SLComposeViewController __weak *composeViewController = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
-//        [composeViewController addImage: [self imageWithView:self.view]];
-//        
-//        [composeViewController setCompletionHandler: ^(SLComposeViewControllerResult result) {
-//            
-//            switch (result) {
-//                    
-//                case SLComposeViewControllerResultCancelled:
-//                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
-//                    break;
-//                case SLComposeViewControllerResultDone:
-//                    [composeViewController dismissViewControllerAnimated:YES completion:nil];
-//                    break;
-//                default:
-//                    break;
-//            }
-//            
-//        }];
-//        
-//        [self presentViewController:composeViewController animated:YES completion:nil];
-//    } else {
-//        NSLog(@"Facebook sharing not enabled. This is a simulator");
-//    }
-    
 }
 
 - (void)showImagePickingActionSheet {
