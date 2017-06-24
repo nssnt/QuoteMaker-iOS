@@ -55,7 +55,7 @@
 
 -(void)createAndDisplayAd {
     GADRequest *request = [[GADRequest alloc] init];
-    request.testDevices = @[kGADSimulatorID, @"de2dcca5b1ce76c115864f1beda9b1d2a06e11a2"];
+    request.testDevices = @[kGADSimulatorID, @"34816b235a91edd01c3d822d53c4bca8"];
     [self.adView loadRequest:request];
 }
 
@@ -92,6 +92,15 @@
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
         
     }
+    
+}
+
+-(void)adViewDidReceiveAd:(GADBannerView *)bannerView {
+    NSLog(@"*********************************Ad received successfully!*********************************");
+}
+
+-(void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"*********************************Ad did fail to receive. Error description: %@*********************************", error.description);
     
 }
 

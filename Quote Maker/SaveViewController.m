@@ -77,6 +77,7 @@
     self.saveButton.layer.masksToBounds = NO;
     
     self.mainLabel.adjustsFontSizeToFitWidth = YES;
+    [self.mainLabel sizeToFit];
     self.mainLabel.layer.masksToBounds = NO;
     
     self.addImageButton.layer.shadowColor = [[UIColor blackColor] CGColor];
@@ -100,7 +101,7 @@
 }
 
 -(IBAction)shareButtonTouched:(id)sender {
-    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: [UIColor whiteColor] delegate: self];
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: textColor delegate: self];
     
     [self presentViewController:colorPicker animated:YES completion: nil];
 }
