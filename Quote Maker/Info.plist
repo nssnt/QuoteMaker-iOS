@@ -30,8 +30,11 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Slot-Regular.ttf</string>
-		<string>Bevan-Regular.ttf</string>
+		<string>Langdon.otf</string>
+		<string>Norwester-Regular.ttf</string>
+		<string>Myra 4F Caps Light.ttf</string>
+		<string>Myra 4F Caps Regular.ttf</string>
+		<string>Myra 4F Caps Bold.ttf</string>
 		<string>GrandHotel-Regular.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
