@@ -125,7 +125,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84n-PA-JMc">
-                                <rect key="frame" x="16" y="450" width="288" height="60"/>
+                                <rect key="frame" x="16" y="438" width="288" height="60"/>
                                 <color key="backgroundColor" red="0.97069046152909766" green="1" blue="0.99711956014367731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JHc-4I-z01"/>
@@ -168,7 +168,7 @@
                         <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="84n-PA-JMc" secondAttribute="trailing" id="23T-dG-0UG"/>
-                            <constraint firstItem="KnB-Tf-IJU" firstAttribute="top" secondItem="84n-PA-JMc" secondAttribute="bottom" constant="8" id="G48-Yy-Jvd"/>
+                            <constraint firstItem="KnB-Tf-IJU" firstAttribute="top" secondItem="84n-PA-JMc" secondAttribute="bottom" constant="20" id="G48-Yy-Jvd"/>
                             <constraint firstItem="KnB-Tf-IJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JNa-zG-Db1"/>
                             <constraint firstItem="lq8-z3-46x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSr-RY-Atx"/>
                             <constraint firstItem="lq8-z3-46x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="P5p-OK-nry"/>
@@ -184,6 +184,7 @@
                     <navigationItem key="navigationItem" title="Welcome" id="AZ8-Xm-VDf"/>
                     <connections>
                         <outlet property="adView" destination="KnB-Tf-IJU" id="ceq-g4-nqY"/>
+                        <outlet property="adViewHeightConstraint" destination="qFg-EQ-UU2" id="1h1-oW-MfL"/>
                         <outlet property="mainTextView" destination="hJF-Oz-NvD" id="aAY-k9-zZg"/>
                         <outlet property="previewButton" destination="84n-PA-JMc" id="vTN-Ck-GIA"/>
                     </connections>

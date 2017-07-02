@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *mainTextView;
 @property (weak, nonatomic) IBOutlet UIButton *previewButton;
 @property (weak, nonatomic) IBOutlet GADBannerView *adView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *adViewHeightConstraint;
 
 -(IBAction)previewButtonPressed:(id)sender;
 

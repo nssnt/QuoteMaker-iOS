@@ -13,6 +13,7 @@
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
 #import "FCColorPickerViewController.h"
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate>{
     
@@ -101,9 +102,36 @@
 }
 
 -(IBAction)shareButtonTouched:(id)sender {
-    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: textColor delegate: self];
     
-    [self presentViewController:colorPicker animated:YES completion: nil];
+    //Create photo object from our view
+    FBSDKSharePhoto *photo = [FBSDKSharePhoto photoWithImage:[self imageWithView:self.view] userGenerated:YES];
+    //Create a content object
+    FBSDKSharePhotoContent *photoContent = [[FBSDKSharePhotoContent alloc] init];
+    //Add our photo to the content
+    [photoContent setPhotos: @[photo]];
+    
+    //Init the dialog
+    FBSDKShareDialog *shareDialog = [[FBSDKShareDialog alloc] init];
+    [shareDialog setShouldFailOnDataError:YES];
+    [shareDialog setShareContent:photoContent]; // This is the content that the dialog is going to show
+    
+    //Check if the fb app is installed in the user's device. If YES, use the app. Use browser otherwise
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fbauth2://"]]) {
+        [shareDialog setMode:FBSDKShareDialogModeNative];
+    } else {
+        [shareDialog setMode:FBSDKShareDialogModeBrowser];
+    }
+    
+    if ([shareDialog canShow]) {
+        [shareDialog show];
+    } else {
+        NSLog(@"Cannot show share dialog for some reason....");
+    }
+    
+    
+//    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: textColor delegate: self];
+//
+//    [self presentViewController:colorPicker animated:YES completion: nil];
 }
 
 - (void)showImagePickingActionSheet {

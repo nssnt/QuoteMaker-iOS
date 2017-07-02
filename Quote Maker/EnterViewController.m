@@ -19,7 +19,7 @@
 
 @implementation EnterViewController
 
-@synthesize mainTextView, previewButton, adView;
+@synthesize mainTextView, previewButton, adView, adViewHeightConstraint;
 
 
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
@@ -80,9 +80,7 @@
 }
 
 -(IBAction)previewButtonPressed:(id)sender{
-    
     @autoreleasepool {
-        
         __weak SaveViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveViewController"];
         
         SVC.quoteText = self.mainTextView.text;
@@ -90,18 +88,7 @@
         SVC.modalPresentationStyle = UIModalPresentationCustom;
         
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
-        
     }
-    
-}
-
--(void)adViewDidReceiveAd:(GADBannerView *)bannerView {
-    NSLog(@"*********************************Ad received successfully!*********************************");
-}
-
--(void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"*********************************Ad did fail to receive. Error description: %@*********************************", error.description);
-    
 }
 
 @end
