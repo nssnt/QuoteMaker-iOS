@@ -37,71 +37,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self updateBackgroundImage];
     [self initViewController];
+    [self updateMainLabelTextColor];
+    [self updateBackgroundImage];
+    [self addDoubleTapGestureRecognizer];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [self storeBGImage];
 }
 
-- (void)storeBGImage {
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
-        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-        
-        NSData *imageData = [NSKeyedArchiver archivedDataWithRootObject:actualBGImage];
-        [ud setObject:imageData forKey:@"UD_BG_IMAGE"];
-    });
-}
-
-- (void)updateMainLabelTextColor {
-    
-    if (textColor != nil) {
-        self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
-    } else {
-        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-        NSData * colorData = [ud objectForKey: @"UD_TEXT_COLOR"];
-        
-        textColor = [NSKeyedUnarchiver unarchiveObjectWithData:colorData];
-        
-        if (textColor != nil) {
-            self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
-        }
-    }
-}
-
-- (void)updateBackgroundImage {
-    
-    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    NSData * imageData = [ud objectForKey: @"UD_BG_IMAGE"];
-    UIImage *image = [NSKeyedUnarchiver unarchiveObjectWithData:imageData];
-    
-    if (image) {
-        actualBGImage = image;
-        biv = [[UIImageView alloc] initWithFrame:self.view.frame];
-        biv.clipsToBounds = YES;
-        biv.alpha = slider.value / 100;
-        biv.contentMode = UIViewContentModeScaleAspectFill;
-        
-        [self.imageView addSubview:biv];
-        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-        
-        self.imageView.alpha = 0.0;
-        [UIView animateWithDuration:0.3 animations:^{
-            self.imageView.alpha = 1.0;
-            self.imageView.image = actualBGImage;
-            biv.image = [actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil];
-        }];
-    } else {
-        return;
-    }
-}
-
 - (void)initViewController {
     
     UIFont *font = [UIFont fontWithName:@"Langdon" size:125];
-    
-    [self updateMainLabelTextColor];
     
     self.mainLabel.font = font;
     self.mainLabel.text = quoteText;
@@ -129,6 +77,71 @@
     
 }
 
+- (void)updateMainLabelTextColor {
+    if (textColor != nil) {
+        self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
+    } else {
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        NSData * colorData = [ud objectForKey: @"UD_TEXT_COLOR"];
+        textColor = [NSKeyedUnarchiver unarchiveObjectWithData:colorData];
+        if (textColor != nil) {
+            self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
+        }
+    }
+}
+
+- (void)updateBackgroundImage {
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSData * actualImageData = [ud objectForKey: @"UD_BG_IMAGE"];
+    NSData * blurredImageData = [ud objectForKey: @"UD_BLURRED_IMAGE"];
+    
+    if (actualImageData) {
+        
+        UIImage *actualImage = [NSKeyedUnarchiver unarchiveObjectWithData:actualImageData];
+        UIImage *blurredImage = [NSKeyedUnarchiver unarchiveObjectWithData:blurredImageData];
+        
+        actualBGImage = actualImage;
+        biv = [[UIImageView alloc] initWithFrame:self.view.frame];
+        biv.clipsToBounds = YES;
+        biv.alpha = slider.value / 100;
+        biv.contentMode = UIViewContentModeScaleAspectFill;
+        
+        [self.imageView addSubview:biv];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        
+        self.imageView.image = actualBGImage;
+        biv.image = blurredImage;
+    } else {
+        return;
+    }
+}
+
+- (void)addDoubleTapGestureRecognizer {
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapAction:)];
+    doubleTap.numberOfTouchesRequired = 1;
+    doubleTap.numberOfTapsRequired = 2;
+    [self.captureView addGestureRecognizer:doubleTap];
+}
+
+- (void)doubleTapAction:(UITapGestureRecognizer *)gesture {
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor:textColor delegate:self];
+    [self presentViewController:colorPicker animated:YES completion:nil];
+}
+
+- (void)storeBGImage {
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        NSData *actualImageData = [NSKeyedArchiver archivedDataWithRootObject:actualBGImage];
+        [ud setObject:actualImageData forKey:@"UD_BG_IMAGE"];
+        NSData __block *blurredImageData;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            blurredImageData = [NSKeyedArchiver archivedDataWithRootObject:[actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil]];
+            [ud setObject:blurredImageData forKey:@"UD_BLURRED_IMAGE"];
+        });
+    });
+}
+
 -(IBAction)addImageButtonTouched:(id)sender{
     [self showImagePickingActionSheetInViewController: self];
 }
@@ -154,12 +167,12 @@
         [shareDialog setMode:FBSDKShareDialogModeBrowser];
     }
     
+    //Self explanatory
     if ([shareDialog canShow]) {
         [shareDialog show];
     } else {
         NSLog(@"Cannot show fb share dialog");
     }
-    
 }
 
 - (void)showImagePickingActionSheetInViewController:(UIViewController *)viewController {
@@ -192,7 +205,7 @@
     
 }
 
-- (void)presentPickerWithSourceType:(NSInteger) sourceType {
+- (void)presentPickerWithSourceType:(CameraSourceType) sourceType {
     
     if(pickerController == nil){
         @autoreleasepool {
@@ -225,38 +238,29 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
 -(void)saveCapturedImageToDevice: (UIImage *)image {
     
     switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]) {
             
-        case AVAuthorizationStatusDenied:
-        {
+        case AVAuthorizationStatusDenied: {
             NSLog(@"Redirect to settings page to enable camera access!");
             break;
         }
-            
-        case AVAuthorizationStatusNotDetermined:
-        {
+        case AVAuthorizationStatusNotDetermined: {
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 if (granted) {
                     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
                 } else {
                     NSLog(@"Redirect to settings page to enable camera access or throw a message");
                 }
-                
             }];
             break;
         }
-            
-        case AVAuthorizationStatusAuthorized:
-        {
+        case AVAuthorizationStatusAuthorized: {
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
             break;
         }
-            
-        default:
-        {
+        default: {
             break;
         }
     }
@@ -301,7 +305,6 @@
             
             //Set pickerController to nil to be able to choose another sourceType when clicking the '+' button again.
             pickerController = nil;
-            
         });
     });
 }
@@ -339,9 +342,7 @@
 }
 
 -(IBAction)sliderValueChanged:(UISlider *)sender {
-    
     __weak typeof(self) weakSelf = self;
-    
     @autoreleasepool {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -371,8 +372,9 @@
 }
 
 -(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
-    
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
+
+
