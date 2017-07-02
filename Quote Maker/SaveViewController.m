@@ -128,7 +128,6 @@
         NSLog(@"Cannot show share dialog for some reason....");
     }
     
-    
 //    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: textColor delegate: self];
 //
 //    [self presentViewController:colorPicker animated:YES completion: nil];

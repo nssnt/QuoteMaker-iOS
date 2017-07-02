@@ -30,6 +30,8 @@
 		58663E291E90228A000F1806 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 58663E281E90228A000F1806 /* Utilities.m */; };
 		586640531E9023B3000F1806 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640521E9023B3000F1806 /* SettingsViewController.m */; };
 		586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640551E90550F000F1806 /* UIImage+ImageEffects.m */; };
+		58693E241F096659005EF146 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58693E231F096659005EF146 /* FBSDKCoreKit.framework */; };
+		58693E261F09666F005EF146 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58693E251F09666F005EF146 /* Bolts.framework */; };
 		589F2B251E998203006BFDD3 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F2B241E998203006BFDD3 /* Animator.m */; };
 		58C198B21EA60744005931B5 /* NonClippingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C198B11EA60744005931B5 /* NonClippingLabel.m */; };
 		58C8E2A81EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E2A11EA2A9D0001D4530 /* TPKeyboardAvoidingCollectionView.m */; };
@@ -97,6 +99,8 @@
 		586640521E9023B3000F1806 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		586640541E90550F000F1806 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		586640551E90550F000F1806 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		58693E231F096659005EF146 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Downloads/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		58693E251F09666F005EF146 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Downloads/Bolts.framework; sourceTree = "<group>"; };
 		589F2B231E998203006BFDD3 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
 		589F2B241E998203006BFDD3 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
 		58C198B01EA60744005931B5 /* NonClippingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonClippingLabel.h; sourceTree = "<group>"; };
@@ -122,7 +126,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58693E261F09666F005EF146 /* Bolts.framework in Frameworks */,
 				584365EB1EFEE8B70095388A /* GoogleMobileAds.framework in Frameworks */,
+				58693E241F096659005EF146 /* FBSDKCoreKit.framework in Frameworks */,
 				2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */,
 				5859BDCF1F09598B0098C372 /* FBSDKShareKit.framework in Frameworks */,
 			);
@@ -297,6 +303,8 @@
 		58EDB8291EC8E101007B84BB /* External Libraries & Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58693E251F09666F005EF146 /* Bolts.framework */,
+				58693E231F096659005EF146 /* FBSDKCoreKit.framework */,
 				5859BDCE1F09598B0098C372 /* FBSDKShareKit.framework */,
 				584365EA1EFEE8B70095388A /* GoogleMobileAds.framework */,
 				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
