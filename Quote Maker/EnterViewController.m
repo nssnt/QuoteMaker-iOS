@@ -50,7 +50,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self createAndDisplayAd];
+    //[self createAndDisplayAd];
 }
 
 -(void)createAndDisplayAd {
