@@ -27,9 +27,6 @@
 		5849B2B11E43C21600D519E4 /* GrandHotel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5849B2AE1E43C21000D519E4 /* GrandHotel-Regular.ttf */; };
 		5849B2B61E43CE9B00D519E4 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849B2B51E43CE9B00D519E4 /* SaveViewController.m */; };
 		5859BDCF1F09598B0098C372 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859BDCE1F09598B0098C372 /* FBSDKShareKit.framework */; };
-		5859BDD31F095A0A0098C372 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859BDD01F095A090098C372 /* FBSDKCoreKit.framework */; };
-		5859BDD41F095A0A0098C372 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859BDD11F095A090098C372 /* Bolts.framework */; };
-		5859BDD51F095A0A0098C372 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5859BDD21F095A0A0098C372 /* FBSDKLoginKit.framework */; };
 		58663E291E90228A000F1806 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 58663E281E90228A000F1806 /* Utilities.m */; };
 		586640531E9023B3000F1806 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640521E9023B3000F1806 /* SettingsViewController.m */; };
 		586640561E90550F000F1806 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 586640551E90550F000F1806 /* UIImage+ImageEffects.m */; };
@@ -94,9 +91,6 @@
 		5849B2B41E43CE9B00D519E4 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		5849B2B51E43CE9B00D519E4 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		5859BDCE1F09598B0098C372 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
-		5859BDD01F095A090098C372 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		5859BDD11F095A090098C372 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/FacebookSDKs-iOS-4/Bolts.framework"; sourceTree = "<group>"; };
-		5859BDD21F095A0A0098C372 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		58663E271E90228A000F1806 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		58663E281E90228A000F1806 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		586640511E9023B3000F1806 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -128,10 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5859BDD41F095A0A0098C372 /* Bolts.framework in Frameworks */,
 				584365EB1EFEE8B70095388A /* GoogleMobileAds.framework in Frameworks */,
-				5859BDD51F095A0A0098C372 /* FBSDKLoginKit.framework in Frameworks */,
-				5859BDD31F095A0A0098C372 /* FBSDKCoreKit.framework in Frameworks */,
 				2B6BF89D265DE764F8AFD9AB /* Pods_Quote_Maker.framework in Frameworks */,
 				5859BDCF1F09598B0098C372 /* FBSDKShareKit.framework in Frameworks */,
 			);
@@ -306,9 +297,6 @@
 		58EDB8291EC8E101007B84BB /* External Libraries & Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5859BDD11F095A090098C372 /* Bolts.framework */,
-				5859BDD01F095A090098C372 /* FBSDKCoreKit.framework */,
-				5859BDD21F095A0A0098C372 /* FBSDKLoginKit.framework */,
 				5859BDCE1F09598B0098C372 /* FBSDKShareKit.framework */,
 				584365EA1EFEE8B70095388A /* GoogleMobileAds.framework */,
 				586640541E90550F000F1806 /* UIImage+ImageEffects.h */,
