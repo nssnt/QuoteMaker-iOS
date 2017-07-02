@@ -17,6 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [NSThread sleepForTimeInterval: 1.5];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"UD_BG_IMAGE"];
     
     return YES;
 }

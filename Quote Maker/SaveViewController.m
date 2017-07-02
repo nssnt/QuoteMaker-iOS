@@ -15,13 +15,14 @@
 #import "FCColorPickerViewController.h"
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
-@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate>{
+@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate> {
     
     UIImagePickerController *pickerController;
     UIImage *actualBGImage;
     UIImageView *biv;
     Animator *animator;
     UIColor *textColor;
+    
 }
 
 @end
@@ -29,17 +30,28 @@
 @implementation SaveViewController
 @synthesize quoteText, mainLabel, imageView, saveButton, closeButton, addImageButton, captureView, slider;
 
-
 -(void)dealloc {
-    
     NSLog(@"Save VC is being deallocated");
 }
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    [self initViewController];
     
+    [self updateBackgroundImage];
+    [self initViewController];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [self storeBGImage];
+}
+
+- (void)storeBGImage {
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        
+        NSData *imageData = [NSKeyedArchiver archivedDataWithRootObject:actualBGImage];
+        [ud setObject:imageData forKey:@"UD_BG_IMAGE"];
+    });
 }
 
 - (void)updateMainLabelTextColor {
@@ -58,11 +70,39 @@
     }
 }
 
+- (void)updateBackgroundImage {
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSData * imageData = [ud objectForKey: @"UD_BG_IMAGE"];
+    UIImage *image = [NSKeyedUnarchiver unarchiveObjectWithData:imageData];
+    
+    if (image) {
+        actualBGImage = image;
+        biv = [[UIImageView alloc] initWithFrame:self.view.frame];
+        biv.clipsToBounds = YES;
+        biv.alpha = slider.value / 100;
+        biv.contentMode = UIViewContentModeScaleAspectFill;
+        
+        [self.imageView addSubview:biv];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        
+        self.imageView.alpha = 0.0;
+        [UIView animateWithDuration:0.3 animations:^{
+            self.imageView.alpha = 1.0;
+            self.imageView.image = actualBGImage;
+            biv.image = [actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil];
+        }];
+    } else {
+        return;
+    }
+}
+
 - (void)initViewController {
     
     UIFont *font = [UIFont fontWithName:@"Langdon" size:125];
     
     [self updateMainLabelTextColor];
+    
     self.mainLabel.font = font;
     self.mainLabel.text = quoteText;
     self.mainLabel.lineBreakMode = NSLineBreakByClipping;
@@ -89,16 +129,8 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    
-    [super didReceiveMemoryWarning];
-    
-}
-
 -(IBAction)addImageButtonTouched:(id)sender{
-    
-    [self showImagePickingActionSheet];
-    
+    [self showImagePickingActionSheetInViewController: self];
 }
 
 -(IBAction)shareButtonTouched:(id)sender {
@@ -125,66 +157,58 @@
     if ([shareDialog canShow]) {
         [shareDialog show];
     } else {
-        NSLog(@"Cannot show share dialog for some reason....");
+        NSLog(@"Cannot show fb share dialog");
     }
     
-//    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPickerWithColor: textColor delegate: self];
-//
-//    [self presentViewController:colorPicker animated:YES completion: nil];
 }
 
-- (void)showImagePickingActionSheet {
+- (void)showImagePickingActionSheetInViewController:(UIViewController *)viewController {
     
     pickerController = nil;
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
-    alert.popoverPresentationController.sourceView = self.view;
-    alert.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
+    actionSheet.popoverPresentationController.sourceView = self.view;
+    actionSheet.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
     
     UIAlertAction *camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self presentPicker: CameraSourceTypeCamera];
+        [self presentPickerWithSourceType: CameraSourceTypeCamera];
         
     }];
     
     UIAlertAction *library = [UIAlertAction actionWithTitle:@"Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self presentPicker: CameraSourceTypeLibrary];
+        [self presentPickerWithSourceType: CameraSourceTypeLibrary];
     }];
     
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     
-    [alert addAction:library];
-    [alert addAction:camera];
-    [alert addAction:cancel];
+    [actionSheet addAction:library];
+    [actionSheet addAction:camera];
+    [actionSheet addAction:cancel];
     
-    [self presentViewController:alert animated:YES completion:nil];
+    [viewController presentViewController:actionSheet animated:YES completion:nil];
     
 }
 
-- (void)presentPicker:(NSInteger) sourceType {
+- (void)presentPickerWithSourceType:(NSInteger) sourceType {
     
     if(pickerController == nil){
-        
         @autoreleasepool {
-            
             pickerController = [[UIImagePickerController alloc]init];
             pickerController.delegate = self;
             pickerController.allowsEditing = NO;
             
             [pickerController setSourceType: sourceType == CameraSourceTypeLibrary ? UIImagePickerControllerSourceTypePhotoLibrary : UIImagePickerControllerSourceTypeCamera];
         }
-        
     }
     [self presentViewController:pickerController animated:YES completion:nil];
     
 }
 
 -(IBAction)saveButtonTouched:(id)sender{
-    
     @autoreleasepool {
-        
         UIImage *image = [self imageWithView:self.view];
         
         self.addImageButton.hidden = NO;
@@ -194,14 +218,11 @@
         self.shareButton.hidden = NO;
         
         [self saveCapturedImageToDevice:image];
-        
     }
 }
 
 -(IBAction)closeButtonTouched:(id)sender{
-    
     [self dismissViewControllerAnimated:YES completion:nil];
-    
 }
 
 
@@ -238,17 +259,13 @@
         {
             break;
         }
-            
     }
-    
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
         dispatch_async(dispatch_get_main_queue(), ^{
-            
             //Clearing previous images from background and from our variable 'actualBGImage'
             actualBGImage = nil;
             self.imageView.image = nil;
@@ -287,14 +304,11 @@
             
         });
     });
-    
-    
 }
 
 - (UIImage *)imageWithView:(UIView *)view{
     
     @autoreleasepool {
-        
         //We hide these HUDs to make sure we get only the content to be shared clearly
         self.addImageButton.hidden = YES;
         self.saveButton.hidden = YES;
@@ -321,9 +335,7 @@
         self.shareButton.hidden = NO;
         
         return img;
-        
     }
-    
 }
 
 -(IBAction)sliderValueChanged:(UISlider *)sender {
@@ -359,7 +371,7 @@
 }
 
 -(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
-
+    
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
 }
 

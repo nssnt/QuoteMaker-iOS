@@ -79,7 +79,7 @@
     
 }
 
--(IBAction)previewButtonPressed:(id)sender{
+-(IBAction)previewButtonPressed:(id)sender{    
     @autoreleasepool {
         __weak SaveViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveViewController"];
         
