@@ -10,8 +10,9 @@
 #import "SaveViewController.h"
 #import "Animator.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface EnterViewController ()<UITextFieldDelegate, UITextViewDelegate, UIViewControllerTransitioningDelegate, GADBannerViewDelegate> {
+@interface EnterViewController ()<UITextFieldDelegate, UITextViewDelegate, UIViewControllerTransitioningDelegate, GADBannerViewDelegate, UIDropInteractionDelegate> {
     Animator *animator;
 }
 
@@ -30,12 +31,21 @@
     return animator;
 }
 
+- (void)addDropCapability {
+    //Add Drop capability
+    UIDropInteraction *dropInteraction = [[UIDropInteraction alloc] initWithDelegate:self];
+    if (@available(iOS 11.0, *)) {
+        [self.mainTextView addInteraction:dropInteraction];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     animator = [[Animator alloc] init];
     self.previewButton.layer.cornerRadius = previewButton.frame.size.height / 2;
     self.previewButton.layer.masksToBounds = YES;
+    [self addDropCapability];
     
 //    for (NSString* family in [UIFont familyNames])
 //    {
@@ -89,6 +99,34 @@
         
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
     }
+}
+
+//MARK: UIDropInteraction Delegates
+-(BOOL)dropInteraction:(UIDropInteraction *)interaction canHandleSession:(id<UIDropSession>)session {
+    return [session hasItemsConformingToTypeIdentifiers:@[(NSString *)kUTTypeText]] && session.items.count == 1;
+}
+
+- (UIDropProposal *)dropInteraction:(UIDropInteraction *)interaction sessionDidUpdate:(id<UIDropSession>)session {
+    
+    CGPoint dropLocation = [session locationInView:self.view];
+    UIDropOperation operation;
+    
+    if (CGRectContainsPoint(self.mainTextView.frame, dropLocation)) {
+        operation = session.localDragSession == nil ? UIDropOperationCopy : UIDropOperationMove;
+    } else {
+        operation = UIDropOperationCancel;
+    }
+    
+    return [[UIDropProposal alloc] initWithDropOperation:operation];
+}
+
+-(void)dropInteraction:(UIDropInteraction *)interaction performDrop:(id<UIDropSession>)session {
+    [session loadObjectsOfClass:[UIImage class] completion:^(NSArray<__kindof id<NSItemProviderReading>> * _Nonnull objects) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSArray *strings = objects;
+            mainTextView.text = [strings firstObject];
+        });
+    }];
 }
 
 @end

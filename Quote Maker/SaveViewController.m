@@ -14,8 +14,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import "FCColorPickerViewController.h"
 #import <FBSDKShareKit/FBSDKShareKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate> {
+@interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate, UIDropInteractionDelegate, UIDragInteractionDelegate> {
     
     UIImagePickerController *pickerController;
     UIImage *actualBGImage;
@@ -75,6 +76,27 @@
     self.addImageButton.layer.shadowOpacity = 0.45;
     self.addImageButton.layer.masksToBounds = NO;
     
+    [self addDragAbility];
+    [self addDropAbility];
+}
+
+-(void)addDragAbility {
+    if (@available(iOS 11.0, *)) {
+        for(UIDragInteraction *interaction in biv.interactions) {
+            [self.mainLabel removeInteraction:interaction];
+        }
+        UIDragInteraction *dragInteraction = [[UIDragInteraction alloc] initWithDelegate:self];
+        self.mainLabel.userInteractionEnabled = YES;
+        [self.mainLabel addInteraction:dragInteraction];
+    }
+}
+
+-(void)addDropAbility {
+    if (@available(iOS 11.0, *)) {
+        UIDropInteraction *dropInteraction = [[UIDropInteraction alloc] initWithDelegate:self];
+        self.mainLabel.userInteractionEnabled = YES;
+        [self.mainLabel addInteraction: dropInteraction];
+    }
 }
 
 - (void)updateMainLabelTextColor {
@@ -310,7 +332,6 @@
 }
 
 - (UIImage *)imageWithView:(UIView *)view{
-    
     @autoreleasepool {
         //We hide these HUDs to make sure we get only the content to be shared clearly
         self.addImageButton.hidden = YES;
@@ -360,6 +381,7 @@
     }
 }
 
+//MARK: FCColorPickerViewController Delegates
 -(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
     
     textColor = color;
@@ -368,11 +390,62 @@
     
     [self updateMainLabelTextColor];
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
-    
 }
 
 -(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
+}
+
+//MARK: UIDragInteraction Delegates
+- (NSArray<UIDragItem *> *)dragInteraction:(UIDragInteraction *)interaction itemsForBeginningSession:(id<UIDragSession>)session {
+    NSItemProvider *provider = [[NSItemProvider alloc] initWithObject:[self imageWithView:self.view]];
+    UIDragItem *item = [[UIDragItem alloc] initWithItemProvider:provider];
+    item.localObject = [self imageWithView:self.view];
+    
+    return @[item];
+}
+
+//MARK: UIDropInteraction Delegates
+-(BOOL)dropInteraction:(UIDropInteraction *)interaction canHandleSession:(id<UIDropSession>)session {
+    return [session hasItemsConformingToTypeIdentifiers:@[(NSString *)kUTTypeImage]] && session.items.count == 1;
+}
+
+- (UIDropProposal *)dropInteraction:(UIDropInteraction *)interaction sessionDidUpdate:(id<UIDropSession>)session {
+    
+    CGPoint dropLocation = [session locationInView:self.view];
+    UIDropOperation operation;
+    
+    if (CGRectContainsPoint(self.imageView.frame, dropLocation)) {
+        operation = session.localDragSession == nil ? UIDropOperationCopy : UIDropOperationCancel;
+    } else {
+        operation = UIDropOperationCancel;
+    }
+    
+    return [[UIDropProposal alloc] initWithDropOperation:operation];
+}
+
+-(void)dropInteraction:(UIDropInteraction *)interaction performDrop:(id<UIDropSession>)session {
+    [session loadObjectsOfClass:[UIImage class] completion:^(NSArray<__kindof id<NSItemProviderReading>> * _Nonnull objects) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSArray *images = objects;
+            actualBGImage = [images firstObject];
+            self.imageView.image = actualBGImage;
+            self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+            
+            UIImage *blurredImage = [actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil];
+            
+            [biv removeFromSuperview];
+            biv = nil;
+            biv = [[UIImageView alloc] initWithFrame:self.view.frame];
+            biv.clipsToBounds = YES;
+            biv.alpha = slider.value / 100;
+            biv.contentMode = UIViewContentModeScaleAspectFill;
+            
+            [self.imageView addSubview:biv];
+            biv.image = blurredImage;
+        });
+    }];
 }
 
 @end
