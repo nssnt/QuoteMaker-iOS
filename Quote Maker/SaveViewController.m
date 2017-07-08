@@ -396,7 +396,7 @@
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
 }
 
-//MARK: UIDragInteraction Delegates
+//MARK: UIDragInteraction Delegate
 - (NSArray<UIDragItem *> *)dragInteraction:(UIDragInteraction *)interaction itemsForBeginningSession:(id<UIDragSession>)session {
     NSItemProvider *provider = [[NSItemProvider alloc] initWithObject:[self imageWithView:self.view]];
     UIDragItem *item = [[UIDragItem alloc] initWithItemProvider:provider];
@@ -426,7 +426,6 @@
 
 -(void)dropInteraction:(UIDropInteraction *)interaction performDrop:(id<UIDropSession>)session {
     [session loadObjectsOfClass:[UIImage class] completion:^(NSArray<__kindof id<NSItemProviderReading>> * _Nonnull objects) {
-        
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *images = objects;
             actualBGImage = [images firstObject];
@@ -434,7 +433,6 @@
             self.imageView.contentMode = UIViewContentModeScaleAspectFill;
             
             UIImage *blurredImage = [actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil];
-            
             [biv removeFromSuperview];
             biv = nil;
             biv = [[UIImageView alloc] initWithFrame:self.view.frame];
@@ -449,5 +447,3 @@
 }
 
 @end
-
-

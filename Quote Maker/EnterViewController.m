@@ -42,6 +42,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.adView.adSize = kGADAdSizeSmartBannerPortrait;
     animator = [[Animator alloc] init];
     self.previewButton.layer.cornerRadius = previewButton.frame.size.height / 2;
     self.previewButton.layer.masksToBounds = YES;
