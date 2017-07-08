@@ -48,11 +48,16 @@
 	<string>We would like to access your photo library</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Alcubierre.otf</string>
+		<string>Back to Black - TTF.ttf</string>
+		<string>Back to Black - TTF.ttf</string>
+		<string>Blenda Script.otf</string>
+		<string>Cornerstone.ttf</string>
+		<string>Saros-Regular.ttf</string>
+		<string>Smoothie Shoppe.ttf</string>
+		<string>SouthbankLT.ttf</string>
+		<string>Badhead.ttf</string>
 		<string>Langdon.otf</string>
-		<string>Norwester-Regular.ttf</string>
-		<string>Myra 4F Caps Light.ttf</string>
-		<string>Myra 4F Caps Regular.ttf</string>
-		<string>Myra 4F Caps Bold.ttf</string>
 		<string>GrandHotel-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

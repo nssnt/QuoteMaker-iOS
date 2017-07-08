@@ -15,6 +15,7 @@
 #import "FCColorPickerViewController.h"
 #import <FBSDKShareKit/FBSDKShareKit.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "Constants.h"
 
 @interface SaveViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FCColorPickerViewControllerDelegate, UIDropInteractionDelegate, UIDragInteractionDelegate> {
     
@@ -50,7 +51,15 @@
 
 - (void)initViewController {
     
-    UIFont *font = [UIFont fontWithName:@"Langdon" size:125];
+    UIFont *font;
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *fontName = [ud valueForKey:MAIN_FONT];
+    
+    if ([fontName isEqualToString:@""] || fontName == nil) {
+        font = [UIFont fontWithName:@"Langdon" size:125];
+    } else {
+        font = [UIFont fontWithName:fontName size:125];
+    }
     
     self.mainLabel.font = font;
     self.mainLabel.text = quoteText;
@@ -80,6 +89,10 @@
     [self addDropAbility];
 }
 
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 -(void)addDragAbility {
     if (@available(iOS 11.0, *)) {
         for(UIDragInteraction *interaction in biv.interactions) {
@@ -104,7 +117,7 @@
         self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
     } else {
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-        NSData * colorData = [ud objectForKey: @"UD_TEXT_COLOR"];
+        NSData * colorData = [ud objectForKey: TEXT_COLOR];
         textColor = [NSKeyedUnarchiver unarchiveObjectWithData:colorData];
         if (textColor != nil) {
             self.mainLabel.textColor = textColor ? textColor : [UIColor whiteColor];
@@ -115,11 +128,10 @@
 - (void)updateBackgroundImage {
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    NSData * actualImageData = [ud objectForKey: @"UD_BG_IMAGE"];
-    NSData * blurredImageData = [ud objectForKey: @"UD_BLURRED_IMAGE"];
+    NSData * actualImageData = [ud objectForKey: BACKGROUND_IMAGE];
+    NSData * blurredImageData = [ud objectForKey: BLURRED_IMAGE];
     
     if (actualImageData) {
-        
         UIImage *actualImage = [NSKeyedUnarchiver unarchiveObjectWithData:actualImageData];
         UIImage *blurredImage = [NSKeyedUnarchiver unarchiveObjectWithData:blurredImageData];
         
@@ -155,11 +167,11 @@
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
         NSData *actualImageData = [NSKeyedArchiver archivedDataWithRootObject:actualBGImage];
-        [ud setObject:actualImageData forKey:@"UD_BG_IMAGE"];
+        [ud setObject:actualImageData forKey:BACKGROUND_IMAGE];
         NSData __block *blurredImageData;
         dispatch_async(dispatch_get_main_queue(), ^{
             blurredImageData = [NSKeyedArchiver archivedDataWithRootObject:[actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil]];
-            [ud setObject:blurredImageData forKey:@"UD_BLURRED_IMAGE"];
+            [ud setObject:blurredImageData forKey:BLURRED_IMAGE];
         });
     });
 }
@@ -200,7 +212,6 @@
 - (void)showImagePickingActionSheetInViewController:(UIViewController *)viewController {
     
     pickerController = nil;
-    
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Pick image from:" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     actionSheet.popoverPresentationController.sourceView = self.view;
@@ -224,7 +235,6 @@
     [actionSheet addAction:cancel];
     
     [viewController presentViewController:actionSheet animated:YES completion:nil];
-    
 }
 
 - (void)presentPickerWithSourceType:(CameraSourceType) sourceType {
@@ -234,7 +244,6 @@
             pickerController = [[UIImagePickerController alloc]init];
             pickerController.delegate = self;
             pickerController.allowsEditing = NO;
-            
             [pickerController setSourceType: sourceType == CameraSourceTypeLibrary ? UIImagePickerControllerSourceTypePhotoLibrary : UIImagePickerControllerSourceTypeCamera];
         }
     }
@@ -261,9 +270,7 @@
 }
 
 -(void)saveCapturedImageToDevice: (UIImage *)image {
-    
     switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]) {
-            
         case AVAuthorizationStatusDenied: {
             NSLog(@"Redirect to settings page to enable camera access!");
             break;
@@ -383,11 +390,9 @@
 
 //MARK: FCColorPickerViewController Delegates
 -(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
-    
     textColor = color;
     NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color];
-    [[NSUserDefaults standardUserDefaults] setObject: colorData forKey: @"UD_TEXT_COLOR"];
-    
+    [[NSUserDefaults standardUserDefaults] setObject: colorData forKey: TEXT_COLOR];
     [self updateMainLabelTextColor];
     [colorPicker dismissViewControllerAnimated:YES completion:nil];
 }

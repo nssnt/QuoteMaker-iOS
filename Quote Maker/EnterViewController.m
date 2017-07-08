@@ -11,6 +11,7 @@
 #import "Animator.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "SettingsViewController.h"
 
 @interface EnterViewController ()<UITextFieldDelegate, UITextViewDelegate, UIViewControllerTransitioningDelegate, GADBannerViewDelegate, UIDropInteractionDelegate> {
     Animator *animator;
@@ -24,10 +25,8 @@
 
 
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    
     animator.startingPoint = self.previewButton.center;
     animator.isDismiss = NO;
-    
     return animator;
 }
 
@@ -40,33 +39,22 @@
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
     self.adView.adSize = kGADAdSizeSmartBannerPortrait;
     animator = [[Animator alloc] init];
     self.previewButton.layer.cornerRadius = previewButton.frame.size.height / 2;
     self.previewButton.layer.masksToBounds = YES;
     [self addDropCapability];
-    
-//    for (NSString* family in [UIFont familyNames])
-//    {
-//        NSLog(@"%@", family);
-//
-//        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-//        {
-//            NSLog(@"  %@", name);
-//        }
-//    }
-    
+    [super viewDidLoad];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:TRUE];
     //[self createAndDisplayAd];
 }
 
 -(void)createAndDisplayAd {
     GADRequest *request = [[GADRequest alloc] init];
-    request.testDevices = @[kGADSimulatorID, @"34816b235a91edd01c3d822d53c4bca8"];
+    request.testDevices = @[kGADSimulatorID, @"34816b235a91edd01c3d822d53c4bca8", @"aff0a883440f2b046b83bd9f8b8f92c237eac923", @"de2dcca5b1ce76c115864f1beda9b1d2a06e11a2"];
     [self.adView loadRequest:request];
 }
 
@@ -90,7 +78,16 @@
     
 }
 
--(IBAction)previewButtonPressed:(id)sender{    
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+-(IBAction)settingsButtonPressed:(id)sender{
+    __weak SettingsViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
+    [self.navigationController pushViewController:SVC animated:YES];
+}
+
+-(IBAction)previewButtonPressed:(id)sender{
     @autoreleasepool {
         __weak SaveViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveViewController"];
         
