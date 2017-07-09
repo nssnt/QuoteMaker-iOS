@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     self.listValues = [NSMutableArray arrayWithObjects: @"SouthbankLT", @"Smoothie_Shoppe", @"Saros-Regular", @"Cornerstone", @"BlendaScript", @"BacktoBlack-Regular", @"Alcubierre", @"BadheadTypeface", @"GrandHotel-Regular", @"Langdon", nil];
-    [self.navigationController setNavigationBarHidden:NO animated:TRUE];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.title = @"Settings";
     [super viewDidLoad];
 }

@@ -13,16 +13,13 @@
     
     
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
     return 1;
 }
     
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
     if(!self.isDismiss) {
-        
         UIView *containerView = [transitionContext containerView];
-        
         UIView *toVC = [transitionContext viewForKey:UITransitionContextToViewKey];
         UIView *circle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, toVC.frame.size.width * 5, toVC.frame.size.width * 5)];
         circle.center = self.startingPoint;
@@ -39,24 +36,16 @@
         [containerView addSubview:toVC];
         
         [UIView animateWithDuration: 0.45 animations:^{
-            
             circle.transform = CGAffineTransformIdentity;
             toVC.alpha = 1.0;
-            
         } completion:^(BOOL finished) {
-            
             circle.alpha = 0;
             [circle removeFromSuperview];
             [transitionContext completeTransition:finished];
-            
         }];
-        
     } else {
-        
         //Dismiss
-        
         UIView *containerView = [transitionContext containerView];
-        
         UIView *toVC = [transitionContext viewForKey:UITransitionContextToViewKey];
         UIView *circle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, containerView.frame.size.width * 5, containerView.frame.size.width * 5)];
         circle.center = self.startingPoint;
@@ -74,15 +63,11 @@
         [UIView animateWithDuration: 0.45 animations:^{
             containerView.transform = CGAffineTransformMakeScale(0.001, 0.001);
             toVC.alpha = 1.0;
-            
         } completion:^(BOOL finished) {
-            
             circle.alpha = 0;
             [circle removeFromSuperview];
             [transitionContext completeTransition:finished];
-            
         }];
-        
     }
 }
     

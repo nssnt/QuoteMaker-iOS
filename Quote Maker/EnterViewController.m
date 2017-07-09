@@ -23,7 +23,6 @@
 
 @synthesize mainTextView, previewButton, adView, adViewHeightConstraint;
 
-
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     animator.startingPoint = self.previewButton.center;
     animator.isDismiss = NO;
@@ -58,24 +57,15 @@
     [self.adView loadRequest:request];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
-
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
     [self.view endEditing:YES];
     [textField resignFirstResponder];
-    
     return YES;
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
     [self.view endEditing:YES];
     [self.mainTextView endEditing:YES];
-    
 }
 
 -(BOOL)prefersStatusBarHidden {
@@ -90,11 +80,9 @@
 -(IBAction)previewButtonPressed:(id)sender{
     @autoreleasepool {
         __weak SaveViewController *SVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SaveViewController"];
-        
         SVC.quoteText = self.mainTextView.text;
         SVC.transitioningDelegate = self;
         SVC.modalPresentationStyle = UIModalPresentationCustom;
-        
         [self.navigationController presentViewController:SVC animated:YES completion:nil];
     }
 }
