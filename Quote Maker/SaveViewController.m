@@ -84,9 +84,10 @@
     self.addImageButton.layer.shadowRadius = 3.0;
     self.addImageButton.layer.shadowOpacity = 0.45;
     self.addImageButton.layer.masksToBounds = NO;
-    
-    [self addDragAbility];
-    [self addDropAbility];
+    if (@available(iOS 11.0, *)) {
+        [self addDragAbility];
+        [self addDropAbility];
+    }
 }
 
 -(BOOL)prefersStatusBarHidden {
@@ -433,10 +434,11 @@
     [session loadObjectsOfClass:[UIImage class] completion:^(NSArray<__kindof id<NSItemProviderReading>> * _Nonnull objects) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *images = objects;
-            actualBGImage = [images firstObject];
+            actualBGImage = [[Utilities sharedManager] scaleImage:[UIImage imageWithData: UIImageJPEGRepresentation([images firstObject], 0.5)] toSize:CGSizeMake(1200, 1200)];
             self.imageView.image = actualBGImage;
             self.imageView.contentMode = UIViewContentModeScaleAspectFill;
             
+            //Applying our frost filter here....
             UIImage *blurredImage = [actualBGImage applyBlurWithRadius: 28 tintColor:nil saturationDeltaFactor: 1.0 maskImage:nil];
             [biv removeFromSuperview];
             biv = nil;

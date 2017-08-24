@@ -31,19 +31,45 @@
 
 - (void)addDropCapability {
     //Add Drop capability
-    UIDropInteraction *dropInteraction = [[UIDropInteraction alloc] initWithDelegate:self];
     if (@available(iOS 11.0, *)) {
-        [self.mainTextView addInteraction:dropInteraction];
+        UIDropInteraction *dropInteraction = [[UIDropInteraction alloc] initWithDelegate:self];
+        if (@available(iOS 11.0, *)) {
+            [self.mainTextView addInteraction:dropInteraction];
+        }
+    } else {
+        // Fallback on earlier versions
     }
 }
 
 - (void)viewDidLoad {
     self.adView.adSize = kGADAdSizeSmartBannerPortrait;
     animator = [[Animator alloc] init];
+    self.previewButton.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.previewButton.layer.shadowOpacity = 0.36;
+    self.previewButton.layer.shadowOffset = CGSizeMake(0, 2);
+    self.previewButton.layer.shadowRadius = 9;
+    self.previewButton.clipsToBounds = NO;
     self.previewButton.layer.cornerRadius = previewButton.frame.size.height / 2;
-    self.previewButton.layer.masksToBounds = YES;
-    [self addDropCapability];
+    [self.previewButton setEnabled:NO];
+    
+    [self applyGradient];
+    if (@available(iOS 11.0, *)) {
+        [self addDropCapability];
+    }
     [super viewDidLoad];
+}
+
+- (void)applyGradient {
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.view.bounds;
+    if (@available(iOS 11.0, *)) {
+        gradient.colors = @[(id)[UIColor colorNamed:@"Gradient Color Red"].CGColor, (id)[UIColor colorNamed:@"Gradient Color White"].CGColor];
+    } else {
+        gradient.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor whiteColor].CGColor];
+    }
+    gradient.startPoint = CGPointMake(-1, -1);
+    gradient.endPoint = CGPointMake(2, 2);
+    [self.view.layer insertSublayer:gradient atIndex:0];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -113,6 +139,14 @@
             mainTextView.text = [strings firstObject];
         });
     }];
+}
+
+-(void)textViewDidChange:(UITextView *)textView {
+    if ([textView hasText]) {
+        [self.previewButton setEnabled:YES];
+    } else {
+        [self.previewButton setEnabled:NO];
+    }
 }
 
 @end

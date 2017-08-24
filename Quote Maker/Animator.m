@@ -26,7 +26,7 @@
         circle.layer.cornerRadius = circle.frame.size.width / 2;
         circle.layer.masksToBounds = YES;
         circle.clipsToBounds = YES;
-        circle.backgroundColor = [UIColor whiteColor];
+        circle.backgroundColor = [UIColor blackColor];
         
         circle.transform = CGAffineTransformMakeScale(0.001, 0.001);
         

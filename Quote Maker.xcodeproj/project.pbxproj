@@ -34,9 +34,6 @@
 		58693E261F09666F005EF146 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58693E251F09666F005EF146 /* Bolts.framework */; };
 		586A4A251F112D7C004D8751 /* Badhead.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A241F112D75004D8751 /* Badhead.ttf */; };
 		586A4A271F1134CE004D8751 /* Alcubierre.otf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A261F1134CE004D8751 /* Alcubierre.otf */; };
-		586A4A2E1F11350A004D8751 /* SouthbankLT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A2D1F113504004D8751 /* SouthbankLT.ttf */; };
-		586A4A2F1F11350A004D8751 /* Smoothie Shoppe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A2C1F1134FA004D8751 /* Smoothie Shoppe.ttf */; };
-		586A4A301F11350A004D8751 /* Saros-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A2B1F1134F2004D8751 /* Saros-Regular.ttf */; };
 		586A4A311F11350A004D8751 /* Cornerstone.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A2A1F1134EB004D8751 /* Cornerstone.ttf */; };
 		586A4A321F11350A004D8751 /* Blenda Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A291F1134E3004D8751 /* Blenda Script.otf */; };
 		586A4A331F11350A004D8751 /* Back to Black - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586A4A281F1134D7004D8751 /* Back to Black - TTF.ttf */; };
@@ -114,9 +111,6 @@
 		586A4A281F1134D7004D8751 /* Back to Black - TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Back to Black - TTF.ttf"; path = "../../Downloads/back-to-black/Back to Black - TTF.ttf"; sourceTree = "<group>"; };
 		586A4A291F1134E3004D8751 /* Blenda Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blenda Script.otf"; path = "../../Downloads/blenda_script/Blenda Script.otf"; sourceTree = "<group>"; };
 		586A4A2A1F1134EB004D8751 /* Cornerstone.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cornerstone.ttf; path = ../../Downloads/Cornerstone.ttf; sourceTree = "<group>"; };
-		586A4A2B1F1134F2004D8751 /* Saros-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Saros-Regular.ttf"; path = "../../Downloads/Saros-Regular.ttf"; sourceTree = "<group>"; };
-		586A4A2C1F1134FA004D8751 /* Smoothie Shoppe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Smoothie Shoppe.ttf"; path = "../../Downloads/smoothie_shoppe/Smoothie Shoppe.ttf"; sourceTree = "<group>"; };
-		586A4A2D1F113504004D8751 /* SouthbankLT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SouthbankLT.ttf; path = "../../Downloads/VintageTypeCo-Font-SouthbankLT/TTF/SouthbankLT.ttf"; sourceTree = "<group>"; };
 		586A4A341F117F86004D8751 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		589F2B231E998203006BFDD3 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
 		589F2B241E998203006BFDD3 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
@@ -256,9 +250,6 @@
 		5849B2AB1E43C1BF00D519E4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				586A4A2D1F113504004D8751 /* SouthbankLT.ttf */,
-				586A4A2C1F1134FA004D8751 /* Smoothie Shoppe.ttf */,
-				586A4A2B1F1134F2004D8751 /* Saros-Regular.ttf */,
 				586A4A2A1F1134EB004D8751 /* Cornerstone.ttf */,
 				586A4A291F1134E3004D8751 /* Blenda Script.otf */,
 				586A4A281F1134D7004D8751 /* Back to Black - TTF.ttf */,
@@ -483,15 +474,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586A4A301F11350A004D8751 /* Saros-Regular.ttf in Resources */,
 				586A4A251F112D7C004D8751 /* Badhead.ttf in Resources */,
 				5849B2B11E43C21600D519E4 /* GrandHotel-Regular.ttf in Resources */,
 				586A4A311F11350A004D8751 /* Cornerstone.ttf in Resources */,
 				586A4A331F11350A004D8751 /* Back to Black - TTF.ttf in Resources */,
 				581507451EDB609E0015C2D7 /* colormap.png in Resources */,
 				581507481EDB609E0015C2D7 /* FCColorPickerViewController.xib in Resources */,
-				586A4A2E1F11350A004D8751 /* SouthbankLT.ttf in Resources */,
-				586A4A2F1F11350A004D8751 /* Smoothie Shoppe.ttf in Resources */,
 				586A4A271F1134CE004D8751 /* Alcubierre.otf in Resources */,
 				5849B2881E43BE3E00D519E4 /* LaunchScreen.storyboard in Resources */,
 				5849B2851E43BE3E00D519E4 /* Assets.xcassets in Resources */,
